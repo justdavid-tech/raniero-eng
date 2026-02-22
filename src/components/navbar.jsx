@@ -5,7 +5,7 @@ const services = [
   { label: "Project Management", href: "/services/project-management" },
   { label: "Engineering Design & Execution", href: "/services/design-execution" },
   { label: "Facility & Logistics Management", href: "/services/facility-logistics" },
-  { label: "Training & Process Consulting", href: "/services/project-managementg" },
+  { label: "Training & Process Consulting", href: "/services/project-management" },
   { label: "Engineering Project Audit", href: "/services/audit" },
   { label: "Cost Engineering & Asset Valuation", href: "/services/cost-engineering" },
 ];

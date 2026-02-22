@@ -1,137 +1,131 @@
-// src/data/services/projectManagement.js
-// ─────────────────────────────────────────────────────────────────────────────
-// DATA FILE FOR: Project Management
-// To create another service page, duplicate this file, rename it,
-// swap out all the content below, and import it into a new wrapper page.
+// src/data/services/designExecution.js
+// 
+// DATA FILE FOR: Design Execution
+// Duplicate this file to create additional services and modify content accordingly.
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const designExecutionData = {
 
   // ── Brand accent color for this service ──────────────────────────────────
-  accent: '#F59E0B',
+  accent: '#2563EB',
 
   // ── HERO ─────────────────────────────────────────────────────────────────
   hero: {
     title:    'Design Execution',
     category: 'Engineering Services',
-    headline: 'Delivering Projects\nOn Time. On Budget.',
-    subtitle: 'End-to-end project management services that take your engineering initiative from first concept to successful completion — with full transparency at every stage.',
-    image:    'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1800&q=80&auto=format&fit=crop',
+    headline: 'From Concept.\nTo Constructible Reality.',
+    subtitle: 'We transform engineering concepts into fully detailed, build-ready designs — ensuring technical precision, regulatory compliance, and seamless project integration.',
+    image:    'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1800&q=80&auto=format&fit=crop',
     stats: [
-      { value: '200+', label: 'Projects Managed' },
+      { value: '180+', label: 'Designs Delivered' },
       { value: '6+',   label: 'Years Experience' },
-      { value: '100%', label: 'Client Commitment' },
+      { value: '100%', label: 'Standards Compliant' },
     ],
   },
 
   // ── OVERVIEW ──────────────────────────────────────────────────────────────
   overview: {
-    image:      'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80&auto=format&fit=crop',
-    statValue:  'A–Z',
-    statLabel:  'Full Lifecycle',
-    heading:    'What is Project\nManagement at Raniero?',
+    image:      'https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b?w=900&q=80&auto=format&fit=crop',
+    statValue:  'Build-Ready',
+    statLabel:  'Deliverables',
+    heading:    'What is Design\nExecution at Raniero?',
     paragraphs: [
-      'At Raniero Engineering, <strong style="color:#0A1F44;font-weight:600">project management is not just coordination</strong> — it is disciplined leadership applied to every phase of your engineering initiative. We take ownership of scope, schedule, cost, quality, risk, and stakeholder communication so you can focus on running your business.',
-      'From the moment we are engaged, our team works to understand your project\'s unique objectives, constraints, and success criteria. We then build a tailored management framework that keeps every workstream aligned, every milestone tracked, and every decision documented.',
-      'Whether you are executing a <strong style="color:#0A1F44;font-weight:600">small facility upgrade or a large-scale infrastructure project</strong>, our project management approach scales to match your needs — without unnecessary overhead.',
+      'At Raniero Engineering, <strong style="color:#0A1F44;font-weight:600">design execution means converting ideas into technically sound, implementation-ready solutions</strong>. We bridge the gap between concept development and on-site construction.',
+      'Our multidisciplinary team develops detailed engineering drawings, technical specifications, and coordinated documentation that ensure clarity for contractors, regulators, and project stakeholders.',
+      'Every design is created with <strong style="color:#0A1F44;font-weight:600">precision, safety, efficiency, and regulatory compliance</strong> in mind — reducing rework, delays, and cost overruns during execution.',
     ],
     highlights: [
-      'Full lifecycle management from initiation to closeout',
-      'Budget control and cost reporting at every stage',
-      'Risk identification, mitigation, and monitoring',
-      'Stakeholder communication and reporting',
-      'On-site and remote management capability',
+      'Concept-to-detail design development',
+      'Multidisciplinary engineering coordination',
+      'Technical drawings & specifications',
+      'Regulatory and standards compliance',
+      'Construction-ready documentation',
     ],
   },
 
   // ── DELIVERABLES ──────────────────────────────────────────────────────────
   deliverables: {
     heading: 'What\'s Included',
-    subtext: 'Every project management engagement includes these core deliverables — tailored to your project scope and complexity.',
+    subtext: 'Our design execution service delivers complete, coordinated, and implementation-ready engineering packages.',
     items: [
       {
-        title: 'Project Charter & Scope Definition',
-        description: 'A clearly documented project charter defining objectives, scope boundaries, assumptions, constraints, and success criteria agreed upon by all stakeholders.',
-        icon: <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>,
+        title: 'Concept Development & Refinement',
+        description: 'Translation of client requirements and preliminary ideas into structured engineering concepts.',
+        icon: <><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></>,
       },
       {
-        title: 'Work Breakdown Structure (WBS)',
-        description: 'A detailed decomposition of all project deliverables into manageable work packages — forming the foundation of your schedule and cost estimates.',
-        icon: <><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 17.5h7M17.5 14v7"/></>,
+        title: 'Detailed Engineering Drawings',
+        description: 'Production of technical drawings including plans, elevations, sections, and system schematics.',
+        icon: <><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></>,
       },
       {
-        title: 'Master Project Schedule',
-        description: 'A fully resourced schedule with critical path analysis, milestone tracking, and float management — reviewed and updated throughout the project lifecycle.',
-        icon: <><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></>,
+        title: 'Technical Specifications',
+        description: 'Comprehensive documentation defining materials, standards, tolerances, and installation requirements.',
+        icon: <><rect x="4" y="3" width="16" height="18" rx="2"/><line x1="8" y1="7" x2="16" y2="7"/></>,
       },
       {
-        title: 'Budget & Cost Control Plan',
-        description: 'Baseline budgeting, cost tracking, variance analysis, and earned value reporting to keep your project financially on track at every stage.',
+        title: 'Multidisciplinary Coordination',
+        description: 'Integration of structural, mechanical, electrical, and civil components to avoid design conflicts.',
+        icon: <><path d="M3 12h18"/><path d="M12 3v18"/></>,
+      },
+      {
+        title: 'Design Compliance Review',
+        description: 'Verification that all design outputs align with Nigerian regulatory requirements and international standards.',
+        icon: <><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></>,
+      },
+      {
+        title: 'Bill of Quantities (BOQ)',
+        description: 'Preparation of structured material and cost breakdowns to support procurement and budgeting.',
         icon: <><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></>,
       },
       {
-        title: 'Risk Register & Mitigation Plan',
-        description: 'A live risk register identifying potential threats and opportunities, with assigned owners, probability ratings, and proactive mitigation strategies.',
-        icon: <><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></>,
+        title: 'Construction Support',
+        description: 'Technical clarification, site coordination, and design adjustments during construction.',
+        icon: <><circle cx="9" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0113 0"/></>,
       },
       {
-        title: 'Progress Reports & Stakeholder Updates',
-        description: 'Regular written progress reports, executive dashboards, and stakeholder meetings — ensuring complete visibility at every level of your organisation.',
-        icon: <><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></>,
-      },
-      {
-        title: 'Vendor & Contractor Management',
-        description: 'Procurement support, contractor onboarding, performance monitoring, and contract administration to protect your interests throughout project execution.',
-        icon: <><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></>,
-      },
-      {
-        title: 'Quality Assurance & Control',
-        description: 'Quality plans, inspection checkpoints, non-conformance tracking, and final quality verification to ensure all deliverables meet agreed specifications.',
-        icon: <><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></>,
-      },
-      {
-        title: 'Project Closeout & Handover Report',
-        description: 'Formal project closure including as-built documentation, lessons learned, final accounts, client sign-off, and a comprehensive handover dossier.',
-        icon: <><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></>,
+        title: 'As-Built Documentation',
+        description: 'Final documentation reflecting actual construction conditions for long-term operational reference.',
+        icon: <><polyline points="3 17 9 11 13 15 21 7"/></>,
       },
     ],
   },
 
   // ── PROCESS ───────────────────────────────────────────────────────────────
   process: {
-    heading: 'Our Project\nManagement Process',
-    subtext: 'A proven 6-phase approach built on industry best practices — adapted to the specific demands of each client and project.',
-    quote:   '"Our flexibility in approach and rigidity in standards is what sets our project management apart."',
+    heading: 'Our Design\nExecution Process',
+    subtext: 'A disciplined 6-phase methodology ensuring precision, coordination, and constructibility.',
+    quote:   '"Strong execution begins with strong design."',
     steps: [
       {
-        title: 'Initiation & Scoping',
-        description: 'We meet with all key stakeholders to understand project objectives, constraints, and success criteria. We define scope boundaries, identify initial risks, and produce a Project Charter for sign-off.',
-        tag: 'Week 1–2',
+        title: 'Client Brief & Requirement Analysis',
+        description: 'We gather functional, technical, and regulatory requirements to define design objectives.',
+        tag: 'Phase 1',
       },
       {
-        title: 'Planning & Scheduling',
-        description: 'We develop the WBS, master schedule, budget baseline, risk register, and communication plan. Every team member and contractor understands their role before work begins.',
-        tag: 'Week 2–4',
+        title: 'Conceptual Design Development',
+        description: 'Creation of preliminary layouts and engineering concepts for client validation.',
+        tag: 'Phase 2',
       },
       {
-        title: 'Procurement & Mobilisation',
-        description: 'We manage vendor selection, contract negotiation, and contractor onboarding. Resources are mobilised in alignment with the project schedule to avoid costly delays.',
-        tag: 'Week 3–5',
+        title: 'Detailed Design Engineering',
+        description: 'Production of coordinated technical drawings, calculations, and specifications.',
+        tag: 'Phase 3',
       },
       {
-        title: 'Execution & Monitoring',
-        description: 'We oversee day-to-day project activities, track progress against the baseline, manage change requests, and issue regular status reports to all stakeholders.',
-        tag: 'Ongoing',
+        title: 'Compliance & Review',
+        description: 'Internal technical review and regulatory compliance verification before approval.',
+        tag: 'Phase 4',
       },
       {
-        title: 'Quality Control & Inspection',
-        description: 'At each milestone, we conduct quality inspections, review deliverables against specifications, and manage any non-conformances before they escalate.',
-        tag: 'Milestone-based',
+        title: 'Documentation & Issuance',
+        description: 'Release of final approved drawings and documentation for construction.',
+        tag: 'Phase 5',
       },
       {
-        title: 'Closeout & Handover',
-        description: 'We complete final documentation, obtain client acceptance, archive project records, capture lessons learned, and produce the handover dossier.',
-        tag: 'Final Phase',
+        title: 'Construction Phase Support',
+        description: 'Ongoing technical guidance and updates to ensure proper design implementation.',
+        tag: 'Phase 6',
       },
     ],
   },
@@ -139,46 +133,46 @@ export const designExecutionData = {
   // ── BENEFITS ──────────────────────────────────────────────────────────────
   benefits: {
     heading: 'Key Benefits of\nChoosing Raniero',
-    subtext: 'Here is what clients consistently report after working with our project management team.',
+    subtext: 'Our design execution service ensures technical accuracy, compliance, and buildability.',
     items: [
       {
-        title: 'On-Time Delivery',
-        description: 'Our scheduling discipline and proactive issue resolution means your project hits its milestones — not just the final deadline.',
+        title: 'Reduced Rework',
+        description: 'Coordinated and precise designs minimise costly on-site corrections.',
         icon: <><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></>,
       },
       {
-        title: 'Budget Protection',
-        description: 'Rigorous cost control and early change management means fewer surprises. We protect your budget from scope creep and unplanned expenditure.',
-        icon: <><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></>,
+        title: 'Regulatory Confidence',
+        description: 'All designs are aligned with Nigerian standards and industry requirements.',
+        icon: <><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/></>,
       },
       {
-        title: 'Single Point of Accountability',
-        description: 'You have one team to call. We coordinate all contractors, vendors, and workstreams so you never have to chase multiple parties for answers.',
-        icon: <><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></>,
+        title: 'Cost Predictability',
+        description: 'Accurate specifications and BOQs improve budgeting accuracy and procurement planning.',
+        icon: <><line x1="12" y1="1" x2="12" y2="23"/></>,
       },
       {
-        title: 'Complete Transparency',
-        description: 'No surprises. You receive regular written reports, real-time access to key project data, and honest communication at every stage.',
-        icon: <><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></>,
+        title: 'Improved Constructibility',
+        description: 'Designs are developed with real-world site conditions and contractor usability in mind.',
+        icon: <><path d="M3 12h18"/></>,
       },
       {
-        title: 'Risk-Aware Execution',
-        description: 'We identify and plan for risks before they become problems — reducing the likelihood of costly delays, rework, or safety incidents.',
-        icon: <><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></>,
+        title: 'Multidisciplinary Integration',
+        description: 'All engineering disciplines work in alignment, preventing system conflicts.',
+        icon: <><path d="M12 3v18"/></>,
       },
       {
-        title: 'Locally Grounded, Globally Minded',
-        description: 'We understand the Nigerian project environment deeply — regulatory requirements, contractor landscape, logistics challenges — while applying global standards.',
-        icon: <><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></>,
+        title: 'Long-Term Documentation Value',
+        description: 'As-built records provide future maintenance and upgrade guidance.',
+        icon: <><polyline points="3 17 9 11 13 15 21 7"/></>,
       },
     ],
   },
 
   // ── CTA ───────────────────────────────────────────────────────────────────
   cta: {
-    heading:    'Let\'s Manage Your Next Project Together',
-    subtext:    'Tell us about your project and we\'ll schedule a free initial consultation to discuss how we can help you deliver it successfully.',
-    primaryBtn: 'Request Consultation',
-    whatsapp:   '2348000000000', // replace with real number
+    heading:    'Bring Your Engineering Concepts to Life',
+    subtext:    'Partner with us for structured, compliant, and execution-ready engineering design solutions.',
+    primaryBtn: 'Start Your Design Project',
+    whatsapp:   '2348000000000',
   },
 };

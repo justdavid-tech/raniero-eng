@@ -36,7 +36,7 @@ function App() {
       <Route path="/services/design-execution"     element={<DesignExecution />} />
       <Route path="/services/logistics-services"   element={<LogisticsServices />} />
       <Route path="/services/process-establishment" element={<ProcessEstablishment />} />
-      <Route path="/services/engineering-audit"    element={<EngineeringAudit />} />
+      <Route path="/services/audit"    element={<EngineeringAudit />} />
       <Route path="/services/cost-engineering"     element={<CostEngineering />} />
     </Routes>
   )

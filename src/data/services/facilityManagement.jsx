@@ -1,137 +1,131 @@
-// src/data/services/projectManagement.js
-// ─────────────────────────────────────────────────────────────────────────────
-// DATA FILE FOR: Project Management
-// To create another service page, duplicate this file, rename it,
-// swap out all the content below, and import it into a new wrapper page.
+// src/data/services/facilityManagement.js
+// 
+// DATA FILE FOR: Facility Management
+// Duplicate this file to create additional services and modify content accordingly.
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const facilityManagementData = {
 
   // ── Brand accent color for this service ──────────────────────────────────
-  accent: '#F59E0B',
+  accent: '#6366F1',
 
   // ── HERO ─────────────────────────────────────────────────────────────────
   hero: {
     title:    'Facility Management',
     category: 'Engineering Services',
-    headline: 'Delivering Projects\nOn Time. On Budget.',
-    subtitle: 'End-to-end project management services that take your engineering initiative from first concept to successful completion — with full transparency at every stage.',
-    image:    'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1800&q=80&auto=format&fit=crop',
+    headline: 'Maintaining Assets.\nMaximising Performance.',
+    subtitle: 'Comprehensive facility management solutions that ensure your buildings, infrastructure, and assets operate safely, efficiently, and sustainably.',
+    image:    'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1800&q=80&auto=format&fit=crop',
     stats: [
-      { value: '200+', label: 'Projects Managed' },
-      { value: '6+',   label: 'Years Experience' },
-      { value: '100%', label: 'Client Commitment' },
+      { value: '100+', label: 'Facilities Managed' },
+      { value: '24/7', label: 'Maintenance Support' },
+      { value: '99%',  label: 'Operational Uptime' },
     ],
   },
 
   // ── OVERVIEW ──────────────────────────────────────────────────────────────
   overview: {
-    image:      'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80&auto=format&fit=crop',
-    statValue:  'A–Z',
-    statLabel:  'Full Lifecycle',
-    heading:    'What is Project\nManagement at Raniero?',
+    image:      'https://images.unsplash.com/photo-1581091012184-5c2f6c68c2f0?w=900&q=80&auto=format&fit=crop',
+    statValue:  'Integrated',
+    statLabel:  'Asset Care',
+    heading:    'What is Facility\nManagement at Raniero?',
     paragraphs: [
-      'At Raniero Engineering, <strong style="color:#0A1F44;font-weight:600">project management is not just coordination</strong> — it is disciplined leadership applied to every phase of your engineering initiative. We take ownership of scope, schedule, cost, quality, risk, and stakeholder communication so you can focus on running your business.',
-      'From the moment we are engaged, our team works to understand your project\'s unique objectives, constraints, and success criteria. We then build a tailored management framework that keeps every workstream aligned, every milestone tracked, and every decision documented.',
-      'Whether you are executing a <strong style="color:#0A1F44;font-weight:600">small facility upgrade or a large-scale infrastructure project</strong>, our project management approach scales to match your needs — without unnecessary overhead.',
+      'At Raniero Engineering, <strong style="color:#0A1F44;font-weight:600">facility management means protecting and optimising your physical assets</strong> through structured maintenance, operational oversight, and performance monitoring.',
+      'We manage commercial, industrial, and institutional facilities to ensure systems such as power, HVAC, plumbing, safety, and structural components operate at peak efficiency.',
+      'Our approach combines preventive maintenance, rapid response support, and long-term asset planning — ensuring <strong style="color:#0A1F44;font-weight:600">reduced downtime, extended asset lifespan, and cost control</strong>.',
     ],
     highlights: [
-      'Full lifecycle management from initiation to closeout',
-      'Budget control and cost reporting at every stage',
-      'Risk identification, mitigation, and monitoring',
-      'Stakeholder communication and reporting',
-      'On-site and remote management capability',
+      'Preventive and corrective maintenance',
+      'Building systems management',
+      'Asset lifecycle planning',
+      'Health & safety compliance',
+      'Energy efficiency optimisation',
     ],
   },
 
   // ── DELIVERABLES ──────────────────────────────────────────────────────────
   deliverables: {
     heading: 'What\'s Included',
-    subtext: 'Every project management engagement includes these core deliverables — tailored to your project scope and complexity.',
+    subtext: 'Our facility management services are structured to ensure operational continuity and long-term asset protection.',
     items: [
       {
-        title: 'Project Charter & Scope Definition',
-        description: 'A clearly documented project charter defining objectives, scope boundaries, assumptions, constraints, and success criteria agreed upon by all stakeholders.',
-        icon: <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>,
+        title: 'Preventive Maintenance Program',
+        description: 'Scheduled inspections and servicing of mechanical, electrical, and structural systems to prevent unexpected failures.',
+        icon: <><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></>,
       },
       {
-        title: 'Work Breakdown Structure (WBS)',
-        description: 'A detailed decomposition of all project deliverables into manageable work packages — forming the foundation of your schedule and cost estimates.',
-        icon: <><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 17.5h7M17.5 14v7"/></>,
+        title: 'Corrective Maintenance & Repairs',
+        description: 'Rapid response to breakdowns and system faults to restore operations quickly and safely.',
+        icon: <><path d="M3 6h18"/><path d="M8 6v12"/><path d="M16 6v12"/></>,
       },
       {
-        title: 'Master Project Schedule',
-        description: 'A fully resourced schedule with critical path analysis, milestone tracking, and float management — reviewed and updated throughout the project lifecycle.',
-        icon: <><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></>,
+        title: 'HVAC & Power Systems Management',
+        description: 'Monitoring and servicing of air conditioning, ventilation, generators, and electrical distribution systems.',
+        icon: <><rect x="3" y="4" width="18" height="12" rx="2"/><line x1="8" y1="20" x2="16" y2="20"/></>,
       },
       {
-        title: 'Budget & Cost Control Plan',
-        description: 'Baseline budgeting, cost tracking, variance analysis, and earned value reporting to keep your project financially on track at every stage.',
-        icon: <><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></>,
+        title: 'Health, Safety & Compliance Audits',
+        description: 'Routine inspections ensuring facilities comply with Nigerian regulatory and safety standards.',
+        icon: <><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></>,
       },
       {
-        title: 'Risk Register & Mitigation Plan',
-        description: 'A live risk register identifying potential threats and opportunities, with assigned owners, probability ratings, and proactive mitigation strategies.',
-        icon: <><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></>,
+        title: 'Asset Register & Lifecycle Tracking',
+        description: 'Comprehensive documentation of facility assets including maintenance history and replacement planning.',
+        icon: <><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></>,
       },
       {
-        title: 'Progress Reports & Stakeholder Updates',
-        description: 'Regular written progress reports, executive dashboards, and stakeholder meetings — ensuring complete visibility at every level of your organisation.',
-        icon: <><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></>,
+        title: 'Energy Management & Optimisation',
+        description: 'Energy audits and optimisation strategies to reduce operational costs and environmental impact.',
+        icon: <><circle cx="12" cy="12" r="10"/><path d="M12 2v20"/></>,
       },
       {
-        title: 'Vendor & Contractor Management',
-        description: 'Procurement support, contractor onboarding, performance monitoring, and contract administration to protect your interests throughout project execution.',
-        icon: <><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></>,
+        title: 'Vendor & Contractor Coordination',
+        description: 'Supervision of third-party service providers to ensure quality standards and service efficiency.',
+        icon: <><circle cx="9" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0113 0"/></>,
       },
       {
-        title: 'Quality Assurance & Control',
-        description: 'Quality plans, inspection checkpoints, non-conformance tracking, and final quality verification to ensure all deliverables meet agreed specifications.',
-        icon: <><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></>,
-      },
-      {
-        title: 'Project Closeout & Handover Report',
-        description: 'Formal project closure including as-built documentation, lessons learned, final accounts, client sign-off, and a comprehensive handover dossier.',
-        icon: <><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></>,
+        title: 'Facility Performance Reporting',
+        description: 'Regular operational reports detailing maintenance activities, system performance, and improvement recommendations.',
+        icon: <><line x1="6" y1="20" x2="6" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="18" y1="20" x2="18" y2="14"/></>,
       },
     ],
   },
 
   // ── PROCESS ───────────────────────────────────────────────────────────────
   process: {
-    heading: 'Our Project\nManagement Process',
-    subtext: 'A proven 6-phase approach built on industry best practices — adapted to the specific demands of each client and project.',
-    quote:   '"Our flexibility in approach and rigidity in standards is what sets our project management apart."',
+    heading: 'Our Facility\nManagement Process',
+    subtext: 'A structured 6-phase system designed to maintain asset performance and operational reliability.',
+    quote:   '"Well-maintained facilities are the foundation of safe and productive operations."',
     steps: [
       {
-        title: 'Initiation & Scoping',
-        description: 'We meet with all key stakeholders to understand project objectives, constraints, and success criteria. We define scope boundaries, identify initial risks, and produce a Project Charter for sign-off.',
-        tag: 'Week 1–2',
+        title: 'Facility Assessment',
+        description: 'Comprehensive inspection of buildings, equipment, and systems to establish baseline condition and performance.',
+        tag: 'Phase 1',
       },
       {
-        title: 'Planning & Scheduling',
-        description: 'We develop the WBS, master schedule, budget baseline, risk register, and communication plan. Every team member and contractor understands their role before work begins.',
-        tag: 'Week 2–4',
+        title: 'Maintenance Planning',
+        description: 'Development of preventive maintenance schedules aligned with manufacturer guidelines and operational needs.',
+        tag: 'Phase 2',
       },
       {
-        title: 'Procurement & Mobilisation',
-        description: 'We manage vendor selection, contract negotiation, and contractor onboarding. Resources are mobilised in alignment with the project schedule to avoid costly delays.',
-        tag: 'Week 3–5',
+        title: 'Resource Allocation',
+        description: 'Assignment of skilled technicians, tools, and materials required to support ongoing maintenance activities.',
+        tag: 'Phase 3',
       },
       {
         title: 'Execution & Monitoring',
-        description: 'We oversee day-to-day project activities, track progress against the baseline, manage change requests, and issue regular status reports to all stakeholders.',
-        tag: 'Ongoing',
+        description: 'Implementation of maintenance tasks and real-time monitoring of system performance indicators.',
+        tag: 'Phase 4',
       },
       {
-        title: 'Quality Control & Inspection',
-        description: 'At each milestone, we conduct quality inspections, review deliverables against specifications, and manage any non-conformances before they escalate.',
-        tag: 'Milestone-based',
+        title: 'Compliance & Safety Review',
+        description: 'Routine safety inspections and regulatory compliance checks to mitigate operational risks.',
+        tag: 'Phase 5',
       },
       {
-        title: 'Closeout & Handover',
-        description: 'We complete final documentation, obtain client acceptance, archive project records, capture lessons learned, and produce the handover dossier.',
-        tag: 'Final Phase',
+        title: 'Performance Evaluation & Optimisation',
+        description: 'Review of maintenance effectiveness and introduction of efficiency improvements where necessary.',
+        tag: 'Phase 6',
       },
     ],
   },
@@ -139,46 +133,46 @@ export const facilityManagementData = {
   // ── BENEFITS ──────────────────────────────────────────────────────────────
   benefits: {
     heading: 'Key Benefits of\nChoosing Raniero',
-    subtext: 'Here is what clients consistently report after working with our project management team.',
+    subtext: 'Our facility management approach ensures reliability, safety, and long-term value.',
     items: [
       {
-        title: 'On-Time Delivery',
-        description: 'Our scheduling discipline and proactive issue resolution means your project hits its milestones — not just the final deadline.',
+        title: 'Reduced Downtime',
+        description: 'Preventive maintenance minimises unexpected breakdowns and operational interruptions.',
         icon: <><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></>,
       },
       {
-        title: 'Budget Protection',
-        description: 'Rigorous cost control and early change management means fewer surprises. We protect your budget from scope creep and unplanned expenditure.',
-        icon: <><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></>,
+        title: 'Extended Asset Lifespan',
+        description: 'Structured servicing protects equipment and infrastructure from premature failure.',
+        icon: <><path d="M3 12h18"/></>,
       },
       {
-        title: 'Single Point of Accountability',
-        description: 'You have one team to call. We coordinate all contractors, vendors, and workstreams so you never have to chase multiple parties for answers.',
-        icon: <><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></>,
+        title: 'Cost Efficiency',
+        description: 'Proactive maintenance reduces costly emergency repairs and replacement expenses.',
+        icon: <><line x1="12" y1="1" x2="12" y2="23"/></>,
       },
       {
-        title: 'Complete Transparency',
-        description: 'No surprises. You receive regular written reports, real-time access to key project data, and honest communication at every stage.',
-        icon: <><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></>,
+        title: 'Regulatory Compliance',
+        description: 'Facilities remain aligned with safety and environmental standards in Nigeria.',
+        icon: <><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/></>,
       },
       {
-        title: 'Risk-Aware Execution',
-        description: 'We identify and plan for risks before they become problems — reducing the likelihood of costly delays, rework, or safety incidents.',
-        icon: <><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></>,
+        title: 'Operational Reliability',
+        description: 'Systems perform consistently, supporting uninterrupted productivity.',
+        icon: <><circle cx="12" cy="12" r="10"/></>,
       },
       {
-        title: 'Locally Grounded, Globally Minded',
-        description: 'We understand the Nigerian project environment deeply — regulatory requirements, contractor landscape, logistics challenges — while applying global standards.',
-        icon: <><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></>,
+        title: 'Improved Workplace Safety',
+        description: 'Properly maintained facilities create safer environments for staff and visitors.',
+        icon: <><path d="M9 12l2 2 4-4"/></>,
       },
     ],
   },
 
   // ── CTA ───────────────────────────────────────────────────────────────────
   cta: {
-    heading:    'Let\'s Manage Your Next Project Together',
-    subtext:    'Tell us about your project and we\'ll schedule a free initial consultation to discuss how we can help you deliver it successfully.',
-    primaryBtn: 'Request Consultation',
-    whatsapp:   '2348000000000', // replace with real number
+    heading:    'Secure the Performance of Your Facilities',
+    subtext:    'Partner with us for structured facility management solutions that protect your assets and ensure operational excellence.',
+    primaryBtn: 'Request Facility Support',
+    whatsapp:   '2348000000000',
   },
 };

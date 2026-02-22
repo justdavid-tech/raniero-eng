@@ -1,137 +1,131 @@
-// src/data/services/projectManagement.js
-// ─────────────────────────────────────────────────────────────────────────────
-// DATA FILE FOR: Project Management
-// To create another service page, duplicate this file, rename it,
-// swap out all the content below, and import it into a new wrapper page.
+// src/data/services/corporateTraining.js
+//
+// DATA FILE FOR: Corporate Training
+// Duplicate this file to create additional services and modify content accordingly.
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const corporateTrainingData = {
 
   // ── Brand accent color for this service ──────────────────────────────────
-  accent: '#F59E0B',
+  accent: '#F43F5E',
 
   // ── HERO ─────────────────────────────────────────────────────────────────
   hero: {
     title:    'Corporate Training',
-    category: 'Engineering Services',
-    headline: 'Delivering Projects\nOn Time. On Budget.',
-    subtitle: 'End-to-end project management services that take your engineering initiative from first concept to successful completion — with full transparency at every stage.',
-    image:    'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1800&q=80&auto=format&fit=crop',
+    category: 'Professional Services',
+    headline: 'Empower Teams.\nEnhance Skills.',
+    subtitle: 'We design and deliver targeted corporate training programs to upskill your workforce, boost productivity, and align your team with industry best practices.',
+    image:    'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1800&q=80&auto=format&fit=crop',
     stats: [
-      { value: '200+', label: 'Projects Managed' },
-      { value: '6+',   label: 'Years Experience' },
-      { value: '100%', label: 'Client Commitment' },
+      { value: '150+', label: 'Training Sessions Delivered' },
+      { value: '500+', label: 'Employees Trained' },
+      { value: '95%',  label: 'Client Satisfaction' },
     ],
   },
 
   // ── OVERVIEW ──────────────────────────────────────────────────────────────
   overview: {
-    image:      'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80&auto=format&fit=crop',
-    statValue:  'A–Z',
-    statLabel:  'Full Lifecycle',
-    heading:    'What is Project\nManagement at Raniero?',
+    image:      'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=900&q=80&auto=format&fit=crop',
+    statValue:  'Professional',
+    statLabel:  'Development',
+    heading:    'What is Corporate\nTraining at Raniero?',
     paragraphs: [
-      'At Raniero Engineering, <strong style="color:#0A1F44;font-weight:600">project management is not just coordination</strong> — it is disciplined leadership applied to every phase of your engineering initiative. We take ownership of scope, schedule, cost, quality, risk, and stakeholder communication so you can focus on running your business.',
-      'From the moment we are engaged, our team works to understand your project\'s unique objectives, constraints, and success criteria. We then build a tailored management framework that keeps every workstream aligned, every milestone tracked, and every decision documented.',
-      'Whether you are executing a <strong style="color:#0A1F44;font-weight:600">small facility upgrade or a large-scale infrastructure project</strong>, our project management approach scales to match your needs — without unnecessary overhead.',
+      'At Raniero, <strong style="color:#0A1F44;font-weight:600">corporate training programs are tailored to meet your organization’s strategic objectives</strong>. We focus on skills development, knowledge enhancement, and behavioral transformation.',
+      'Our team works closely with your HR and management teams to identify skill gaps, design engaging learning experiences, and deliver results that drive performance.',
+      'Each training session is designed to <strong style="color:#0A1F44;font-weight:600">maximize employee engagement, knowledge retention, and practical application</strong> in the workplace.',
     ],
     highlights: [
-      'Full lifecycle management from initiation to closeout',
-      'Budget control and cost reporting at every stage',
-      'Risk identification, mitigation, and monitoring',
-      'Stakeholder communication and reporting',
-      'On-site and remote management capability',
+      'Customized training programs',
+      'Skill gap analysis and solution design',
+      'Interactive workshops and hands-on sessions',
+      'Performance improvement and measurement',
+      'Leadership and professional development',
     ],
   },
 
   // ── DELIVERABLES ──────────────────────────────────────────────────────────
   deliverables: {
     heading: 'What\'s Included',
-    subtext: 'Every project management engagement includes these core deliverables — tailored to your project scope and complexity.',
+    subtext: 'Our corporate training service includes comprehensive learning solutions for teams of any size.',
     items: [
       {
-        title: 'Project Charter & Scope Definition',
-        description: 'A clearly documented project charter defining objectives, scope boundaries, assumptions, constraints, and success criteria agreed upon by all stakeholders.',
-        icon: <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>,
+        title: 'Training Needs Analysis',
+        description: 'Identifying skill gaps, learning objectives, and organizational goals.',
+        icon: <><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></>,
       },
       {
-        title: 'Work Breakdown Structure (WBS)',
-        description: 'A detailed decomposition of all project deliverables into manageable work packages — forming the foundation of your schedule and cost estimates.',
-        icon: <><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 17.5h7M17.5 14v7"/></>,
+        title: 'Customized Curriculum Design',
+        description: 'Developing program content tailored to your team’s needs and industry standards.',
+        icon: <><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></>,
       },
       {
-        title: 'Master Project Schedule',
-        description: 'A fully resourced schedule with critical path analysis, milestone tracking, and float management — reviewed and updated throughout the project lifecycle.',
-        icon: <><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></>,
+        title: 'Interactive Workshops',
+        description: 'Hands-on training sessions to reinforce learning and practical application.',
+        icon: <><rect x="4" y="3" width="16" height="18" rx="2"/><line x1="8" y1="7" x2="16" y2="7"/></>,
       },
       {
-        title: 'Budget & Cost Control Plan',
-        description: 'Baseline budgeting, cost tracking, variance analysis, and earned value reporting to keep your project financially on track at every stage.',
-        icon: <><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></>,
+        title: 'E-Learning & Resource Materials',
+        description: 'Provision of digital learning resources, manuals, and follow-up exercises.',
+        icon: <><path d="M3 12h18"/><path d="M12 3v18"/></>,
       },
       {
-        title: 'Risk Register & Mitigation Plan',
-        description: 'A live risk register identifying potential threats and opportunities, with assigned owners, probability ratings, and proactive mitigation strategies.',
-        icon: <><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></>,
+        title: 'Assessment & Feedback',
+        description: 'Pre- and post-training evaluations to measure knowledge gain and performance improvement.',
+        icon: <><polyline points="3 17 9 11 13 15 21 7"/></>,
       },
       {
-        title: 'Progress Reports & Stakeholder Updates',
-        description: 'Regular written progress reports, executive dashboards, and stakeholder meetings — ensuring complete visibility at every level of your organisation.',
-        icon: <><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></>,
+        title: 'Leadership Development',
+        description: 'Programs focused on enhancing managerial and leadership capabilities.',
+        icon: <><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/></>,
       },
       {
-        title: 'Vendor & Contractor Management',
-        description: 'Procurement support, contractor onboarding, performance monitoring, and contract administration to protect your interests throughout project execution.',
-        icon: <><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></>,
+        title: 'Follow-up & Coaching',
+        description: 'Post-training support to reinforce concepts and ensure long-term skill application.',
+        icon: <><circle cx="9" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0113 0"/></>,
       },
       {
-        title: 'Quality Assurance & Control',
-        description: 'Quality plans, inspection checkpoints, non-conformance tracking, and final quality verification to ensure all deliverables meet agreed specifications.',
-        icon: <><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></>,
-      },
-      {
-        title: 'Project Closeout & Handover Report',
-        description: 'Formal project closure including as-built documentation, lessons learned, final accounts, client sign-off, and a comprehensive handover dossier.',
-        icon: <><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></>,
+        title: 'Certification & Recognition',
+        description: 'Formal acknowledgment of participants’ achievements and skills acquired.',
+        icon: <><rect x="4" y="3" width="16" height="18" rx="2"/></>,
       },
     ],
   },
 
   // ── PROCESS ───────────────────────────────────────────────────────────────
   process: {
-    heading: 'Our Project\nManagement Process',
-    subtext: 'A proven 6-phase approach built on industry best practices — adapted to the specific demands of each client and project.',
-    quote:   '"Our flexibility in approach and rigidity in standards is what sets our project management apart."',
+    heading: 'Our Corporate\nTraining Process',
+    subtext: 'A structured 6-phase methodology to deliver impactful learning outcomes.',
+    quote:   '"Empowering teams through learning and development."',
     steps: [
       {
-        title: 'Initiation & Scoping',
-        description: 'We meet with all key stakeholders to understand project objectives, constraints, and success criteria. We define scope boundaries, identify initial risks, and produce a Project Charter for sign-off.',
-        tag: 'Week 1–2',
+        title: 'Needs Assessment & Consultation',
+        description: 'Engage stakeholders to determine organizational goals and skills gaps.',
+        tag: 'Phase 1',
       },
       {
-        title: 'Planning & Scheduling',
-        description: 'We develop the WBS, master schedule, budget baseline, risk register, and communication plan. Every team member and contractor understands their role before work begins.',
-        tag: 'Week 2–4',
+        title: 'Curriculum Design & Planning',
+        description: 'Develop customized content, learning paths, and schedules.',
+        tag: 'Phase 2',
       },
       {
-        title: 'Procurement & Mobilisation',
-        description: 'We manage vendor selection, contract negotiation, and contractor onboarding. Resources are mobilised in alignment with the project schedule to avoid costly delays.',
-        tag: 'Week 3–5',
+        title: 'Training Delivery',
+        description: 'Conduct workshops, seminars, and hands-on sessions for employees.',
+        tag: 'Phase 3',
       },
       {
-        title: 'Execution & Monitoring',
-        description: 'We oversee day-to-day project activities, track progress against the baseline, manage change requests, and issue regular status reports to all stakeholders.',
-        tag: 'Ongoing',
+        title: 'Evaluation & Feedback',
+        description: 'Assess knowledge retention and participant engagement.',
+        tag: 'Phase 4',
       },
       {
-        title: 'Quality Control & Inspection',
-        description: 'At each milestone, we conduct quality inspections, review deliverables against specifications, and manage any non-conformances before they escalate.',
-        tag: 'Milestone-based',
+        title: 'Post-Training Support',
+        description: 'Provide follow-up coaching, resources, and mentoring for practical application.',
+        tag: 'Phase 5',
       },
       {
-        title: 'Closeout & Handover',
-        description: 'We complete final documentation, obtain client acceptance, archive project records, capture lessons learned, and produce the handover dossier.',
-        tag: 'Final Phase',
+        title: 'Certification & Continuous Improvement',
+        description: 'Issue certificates and gather insights to refine future programs.',
+        tag: 'Phase 6',
       },
     ],
   },
@@ -139,46 +133,46 @@ export const corporateTrainingData = {
   // ── BENEFITS ──────────────────────────────────────────────────────────────
   benefits: {
     heading: 'Key Benefits of\nChoosing Raniero',
-    subtext: 'Here is what clients consistently report after working with our project management team.',
+    subtext: 'Our corporate training programs help organizations develop high-performing, skilled, and motivated teams.',
     items: [
       {
-        title: 'On-Time Delivery',
-        description: 'Our scheduling discipline and proactive issue resolution means your project hits its milestones — not just the final deadline.',
-        icon: <><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></>,
+        title: 'Enhanced Skills',
+        description: 'Employees gain relevant knowledge and practical skills for improved performance.',
+        icon: <><circle cx="12" cy="12" r="10"/></>,
       },
       {
-        title: 'Budget Protection',
-        description: 'Rigorous cost control and early change management means fewer surprises. We protect your budget from scope creep and unplanned expenditure.',
-        icon: <><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></>,
+        title: 'Increased Productivity',
+        description: 'Well-trained teams perform tasks efficiently and effectively.',
+        icon: <><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/></>,
       },
       {
-        title: 'Single Point of Accountability',
-        description: 'You have one team to call. We coordinate all contractors, vendors, and workstreams so you never have to chase multiple parties for answers.',
-        icon: <><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></>,
+        title: 'Better Employee Engagement',
+        description: 'Interactive learning fosters motivation and commitment.',
+        icon: <><line x1="12" y1="1" x2="12" y2="23"/></>,
       },
       {
-        title: 'Complete Transparency',
-        description: 'No surprises. You receive regular written reports, real-time access to key project data, and honest communication at every stage.',
-        icon: <><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></>,
+        title: 'Leadership Development',
+        description: 'Future leaders are nurtured through targeted programs.',
+        icon: <><path d="M3 12h18"/></>,
       },
       {
-        title: 'Risk-Aware Execution',
-        description: 'We identify and plan for risks before they become problems — reducing the likelihood of costly delays, rework, or safety incidents.',
-        icon: <><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></>,
+        title: 'Organizational Alignment',
+        description: 'Training ensures teams are aligned with strategic objectives.',
+        icon: <><path d="M12 3v18"/></>,
       },
       {
-        title: 'Locally Grounded, Globally Minded',
-        description: 'We understand the Nigerian project environment deeply — regulatory requirements, contractor landscape, logistics challenges — while applying global standards.',
-        icon: <><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></>,
+        title: 'Measurable Impact',
+        description: 'Evaluations and assessments provide tangible results and insights.',
+        icon: <><polyline points="3 17 9 11 13 15 21 7"/></>,
       },
     ],
   },
 
   // ── CTA ───────────────────────────────────────────────────────────────────
   cta: {
-    heading:    'Let\'s Manage Your Next Project Together',
-    subtext:    'Tell us about your project and we\'ll schedule a free initial consultation to discuss how we can help you deliver it successfully.',
-    primaryBtn: 'Request Consultation',
-    whatsapp:   '2348000000000', // replace with real number
+    heading:    'Empower Your Workforce Today',
+    subtext:    'Partner with Raniero to upskill your team and enhance organizational performance.',
+    primaryBtn: 'Schedule a Training Session',
+    whatsapp:   '2348000000000',
   },
 };
