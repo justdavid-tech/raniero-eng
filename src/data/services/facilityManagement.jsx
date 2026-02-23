@@ -25,7 +25,7 @@ export const facilityManagementData = {
 
   // ── OVERVIEW ──────────────────────────────────────────────────────────────
   overview: {
-    image:      'https://images.unsplash.com/photo-1581091012184-5c2f6c68c2f0?w=900&q=80&auto=format&fit=crop',
+    image:      '/images/processestablishment.jpeg',
     statValue:  'Integrated',
     statLabel:  'Asset Care',
     heading:    'What is Facility\nManagement at Raniero?',

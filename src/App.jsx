@@ -16,6 +16,9 @@ import LogisticsServices  from './pages/services/logisticsServices';
 import ProcessEstablishment from './pages/services/processEstablishment';
 import EngineeringAudit   from './pages/services/EngineeringAudit';
 import CostEngineering    from './pages/services/costEngineering';
+import CivilEngineering from './pages/services/civilEngineering'
+import MechanicalEngineering from './pages/services/mechanicalEngineering'
+import ElectricalEngineering from './pages/services/electricalEngineering'
 
 import ScrollToTop from './components/ScrollToTop'
 import ScrollToTopButton from './components/ScrollToTopButton'
@@ -41,6 +44,9 @@ function App() {
       <Route path="/services/process-establishment" element={<ProcessEstablishment />} />
       <Route path="/services/audit"    element={<EngineeringAudit />} />
       <Route path="/services/cost-engineering"     element={<CostEngineering />} />
+      <Route path="/services/civil-engineering"     element={<CivilEngineering />} />
+      <Route path="/services/mechanical-engineering"     element={<MechanicalEngineering />} />
+      <Route path="/services/electrical-engineering"     element={<ElectricalEngineering />} />
     </Routes>
     <ScrollToTopButton />
     </>

@@ -15,10 +15,10 @@ export const projectManagementData = {
     title:    'Project Management',
     category: 'Engineering Services',
     headline: 'Delivering Projects\nOn Time. On Budget.',
-    subtitle: 'End-to-end project management services that take your engineering initiative from first concept to successful completion — with full transparency at every stage.',
-    image:    'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1800&q=80&auto=format&fit=crop',
+    subtitle: 'End-to-end project management services that take your engineering initiative from first concept to successful completion with full transparency at every stage.',
+    image:    '/images/projectmanagement.jpeg',
     stats: [
-      { value: '200+', label: 'Projects Managed' },
+      { value: '20+', label: 'Projects Managed' },
       { value: '6+',   label: 'Years Experience' },
       { value: '100%', label: 'Client Commitment' },
     ],
@@ -26,14 +26,14 @@ export const projectManagementData = {
 
   // ── OVERVIEW ──────────────────────────────────────────────────────────────
   overview: {
-    image:      'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80&auto=format&fit=crop',
+    image:      '/images/projectmanagement-two.jpeg',
     statValue:  'A–Z',
     statLabel:  'Full Lifecycle',
-    heading:    'What is Project\nManagement at Raniero?',
+    heading:    'What is Project Management at Raniero?',
     paragraphs: [
-      'At Raniero Engineering, <strong style="color:#0A1F44;font-weight:600">project management is not just coordination</strong> — it is disciplined leadership applied to every phase of your engineering initiative. We take ownership of scope, schedule, cost, quality, risk, and stakeholder communication so you can focus on running your business.',
+      'At Raniero Engineering, <strong style="color:#0A1F44;font-weight:600">project management is not just coordination</strong> it is disciplined leadership applied to every phase of your engineering initiative. We take ownership of scope, schedule, cost, quality, risk, and stakeholder communication so you can focus on running your business.',
       'From the moment we are engaged, our team works to understand your project\'s unique objectives, constraints, and success criteria. We then build a tailored management framework that keeps every workstream aligned, every milestone tracked, and every decision documented.',
-      'Whether you are executing a <strong style="color:#0A1F44;font-weight:600">small facility upgrade or a large-scale infrastructure project</strong>, our project management approach scales to match your needs — without unnecessary overhead.',
+      'Whether you are executing a <strong style="color:#0A1F44;font-weight:600">small facility upgrade or a large-scale infrastructure project</strong>, our project management approach scales to match your needs without unnecessary overhead.',
     ],
     highlights: [
       'Full lifecycle management from initiation to closeout',
@@ -56,12 +56,12 @@ export const projectManagementData = {
       },
       {
         title: 'Work Breakdown Structure (WBS)',
-        description: 'A detailed decomposition of all project deliverables into manageable work packages — forming the foundation of your schedule and cost estimates.',
+        description: 'A detailed decomposition of all project deliverables into manageable work packages forming the foundation of your schedule and cost estimates.',
         icon: <><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 17.5h7M17.5 14v7"/></>,
       },
       {
         title: 'Master Project Schedule',
-        description: 'A fully resourced schedule with critical path analysis, milestone tracking, and float management — reviewed and updated throughout the project lifecycle.',
+        description: 'A fully resourced schedule with critical path analysis, milestone tracking, and float management reviewed and updated throughout the project lifecycle.',
         icon: <><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></>,
       },
       {
@@ -76,24 +76,9 @@ export const projectManagementData = {
       },
       {
         title: 'Progress Reports & Stakeholder Updates',
-        description: 'Regular written progress reports, executive dashboards, and stakeholder meetings — ensuring complete visibility at every level of your organisation.',
+        description: 'Regular written progress reports, executive dashboards, and stakeholder meetings ensuring complete visibility at every level of your organisation.',
         icon: <><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></>,
-      },
-      {
-        title: 'Vendor & Contractor Management',
-        description: 'Procurement support, contractor onboarding, performance monitoring, and contract administration to protect your interests throughout project execution.',
-        icon: <><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></>,
-      },
-      {
-        title: 'Quality Assurance & Control',
-        description: 'Quality plans, inspection checkpoints, non-conformance tracking, and final quality verification to ensure all deliverables meet agreed specifications.',
-        icon: <><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></>,
-      },
-      {
-        title: 'Project Closeout & Handover Report',
-        description: 'Formal project closure including as-built documentation, lessons learned, final accounts, client sign-off, and a comprehensive handover dossier.',
-        icon: <><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></>,
-      },
+      }
     ],
   },
 
@@ -143,7 +128,7 @@ export const projectManagementData = {
     items: [
       {
         title: 'On-Time Delivery',
-        description: 'Our scheduling discipline and proactive issue resolution means your project hits its milestones — not just the final deadline.',
+        description: 'Our scheduling discipline and proactive issue resolution means your project hits its milestones not just the final deadline.',
         icon: <><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></>,
       },
       {
@@ -163,12 +148,12 @@ export const projectManagementData = {
       },
       {
         title: 'Risk-Aware Execution',
-        description: 'We identify and plan for risks before they become problems — reducing the likelihood of costly delays, rework, or safety incidents.',
+        description: 'We identify and plan for risks before they become problems reducing the likelihood of costly delays, rework, or safety incidents.',
         icon: <><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></>,
       },
       {
         title: 'Locally Grounded, Globally Minded',
-        description: 'We understand the Nigerian project environment deeply — regulatory requirements, contractor landscape, logistics challenges — while applying global standards.',
+        description: 'We understand the Nigerian project environment deeply regulatory requirements, contractor landscape, logistics challenges while applying global standards.',
         icon: <><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></>,
       },
     ],
@@ -179,6 +164,6 @@ export const projectManagementData = {
     heading:    'Let\'s Manage Your Next Project Together',
     subtext:    'Tell us about your project and we\'ll schedule a free initial consultation to discuss how we can help you deliver it successfully.',
     primaryBtn: 'Request Consultation',
-    whatsapp:   '2348000000000', // replace with real number
+    whatsapp:   '2348152598520',
   },
 };

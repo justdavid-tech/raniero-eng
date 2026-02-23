@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
-// ── Core Values data ──────────────────────────────────────────────────────────
+// Core Values data ──────────────────────────────────────────────────────────
 const coreValues = [
   {
     id: 1,
-    value: "Integrity",
-    description: "We say what we mean and do what we say. Every commitment made to a client is a promise we keep — no exceptions, no excuses.",
+    value: "Reliability",
+    description: "We deliver dependable solutions that meet commitments, timelines, and performance expectations without compromise",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
@@ -19,54 +19,67 @@ const coreValues = [
   },
   {
     id: 2,
-    value: "Simplicity",
-    description: "We strip away complexity to deliver clear, efficient engineering solutions. Great engineering shouldn't be complicated to understand.",
+    value: "Accountability",
+    description: "We take full responsibility for our actions, decisions, and project outcomes, ensuring transparency and trust.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" />
         <path d="M8 12h8M12 8l4 4-4 4" />
       </svg>
     ),
-    accent: "#3B82F6",
+    accent: "#F59E0B",
   },
   {
     id: 3,
-    value: "Value for Investment",
-    description: "Every naira our clients spend is treated with the same care we'd give our own money. We deliver maximum return on every project.",
+    value: "Innovation",
+    description: "We embrace forward-thinking engineering practices and continuous improvement to provide efficient and modern solutions.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round">
         <line x1="12" y1="1" x2="12" y2="23" />
         <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
       </svg>
     ),
-    accent: "#10B981",
+    accent: "#F59E0B",
   },
   {
     id: 4,
-    value: "Excellence",
-    description: "We hold ourselves to the highest professional standards in every deliverable — from the smallest report to the largest construction project.",
+    value: "Integrity",
+    description: "We uphold the highest ethical standards in all our business dealings and professional engagements.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round">
         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
       </svg>
     ),
-    accent: "#8B5CF6",
+    accent: "#F59E0B",
   },
   {
     id: 5,
-    value: "Flexibility",
-    description: "No two clients are alike. We adapt our approach to match each project's unique scope, budget, timeline, and operational context.",
+    value: "Excellence",
+    description: "We are committed to quality, precision, and superior workmanship in every project we undertake.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round">
         <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
       </svg>
     ),
-    accent: "#EF4444",
+    accent: "#F59E0B",
   },
   {
     id: 6,
-    value: "Professionalism",
-    description: "From first contact to final handover, our team conducts every interaction with discipline, expertise, and respect for our clients' time.",
+    value: "Respect",
+    description: "We value our clients, partners, employees, and communities, fostering collaboration and mutual trust.",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round">
+        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+      </svg>
+    ),
+    accent: "#F59E0B",
+  },
+  {
+    id: 7,
+    value: "Ownership",
+    description: "We approach every project with dedication and pride, treating our clients’ challenges as our own.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round">
         <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
@@ -79,48 +92,49 @@ const coreValues = [
 ];
 
 // ── Timeline ──────────────────────────────────────────────────────────────────
-const timeline = [
-  { 
-    year: "2019", 
-    title: "Company Founded", 
-    desc: "Raniero Engineering Nig. Limited was established with a vision to deliver reliable, innovative, and client-focused engineering solutions across Nigeria." 
-  },
-  { 
-    year: "2020", 
-    title: "First Major Projects", 
-    desc: "Successfully delivered our first facility management and project management engagements for corporate clients, building a reputation for quality and timely execution." 
-  },
-  { 
-    year: "2021", 
-    title: "Service Expansion", 
-    desc: "Expanded our portfolio to include engineering project audits, cost engineering, and asset valuation services — strengthening our technical depth." 
-  },
-  { 
-    year: "2022", 
-    title: "Industrial Growth", 
-    desc: "Entered the oil & gas and manufacturing sectors, providing process establishment, logistics management, and multidisciplinary engineering support." 
-  },
-  { 
-    year: "2023", 
-    title: "Corporate Training Launch", 
-    desc: "Launched our Corporate Engineering Management Training Programme, equipping professionals and organisations with practical engineering and leadership expertise." 
-  },
-  { 
-    year: "2024", 
-    title: "Operational Strengthening", 
-    desc: "Enhanced internal systems, quality control processes, and compliance frameworks to improve efficiency, transparency, and project delivery standards." 
-  },
-  { 
-    year: "2025", 
-    title: "Regional Expansion", 
-    desc: "Expanded operations beyond core markets, building strategic partnerships and increasing presence across multiple regions in Nigeria and West Africa." 
-  },
-  { 
-    year: "2026", 
-    title: "Global Positioning", 
-    desc: "Positioned Raniero Engineering as a globally competitive engineering solutions provider through innovation, strategic collaborations, and international project engagements." 
-  },
-];
+// const timeline = [
+//   { 
+//     year: "2019", 
+//     title: "Company Founded", 
+//     desc: "Raniero Engineering Nig. Limited was established with a vision to deliver reliable, innovative, and client-focused engineering solutions across Nigeria." 
+//   },
+//   { 
+//     year: "2020", 
+//     title: "First Major Projects", 
+//     desc: "Successfully delivered our first facility management and project management engagements for corporate clients, building a reputation for quality and timely execution." 
+//   },
+//   { 
+//     year: "2021", 
+//     title: "Service Expansion", 
+//     desc: "Expanded our portfolio to include engineering project audits, cost engineering, and asset valuation services — strengthening our technical depth." 
+//   },
+//   { 
+//     year: "2022", 
+//     title: "Industrial Growth", 
+//     desc: "Entered the oil & gas and manufacturing sectors, providing process establishment, logistics management, and multidisciplinary engineering support." 
+//   },
+//   { 
+//     year: "2023", 
+//     title: "Corporate Training Launch", 
+//     desc: "Launched our Corporate Engineering Management Training Programme, equipping professionals and organisations with practical engineering and leadership expertise." 
+//   },
+//   { 
+//     year: "2024", 
+//     title: "Operational Strengthening", 
+//     desc: "Enhanced internal systems, quality control processes, and compliance frameworks to improve efficiency, transparency, and project delivery standards." 
+//   },
+//   { 
+//     year: "2025", 
+//     title: "Regional Expansion", 
+//     desc: "Expanded operations beyond core markets, building strategic partnerships and increasing presence across multiple regions in Nigeria and West Africa." 
+//   },
+//   { 
+//     year: "2026", 
+//     title: "Global Positioning", 
+//     desc: "Positioned Raniero Engineering as a globally competitive engineering solutions provider through innovation, strategic collaborations, and international project engagements." 
+//   },
+// ];
+// I don't think I'll be needing this at the moment though "StandBy"
 
 export default function About() {
   return (
@@ -440,15 +454,15 @@ export default function About() {
               {/* Image */}
               <div className="w-full lg:w-[480px] flex-shrink-0 ap-story-img-wrap" style={{ height: 520 }}>
                 <img
-                  src="/images/ceo.jpeg"
+                  src="/images/growthstory.png"
                   alt="CEO of Raniero Engineering Nig Limited"
                   className="ap-story-img"
                 />
                 <div className="ap-story-corner-tl" />
                 <div className="ap-story-corner-br" />
                 <div className="ap-story-year-badge">
-                  <span className="ap-display font-800 text-[#07152E]" style={{ fontSize: 36, lineHeight: 1 }}>CEO</span>
-                  <span className="ap-display font-700 uppercase text-[#07152E]" style={{ fontSize: 9, letterSpacing: '0.2em', marginTop: 4, display: 'block' }}>Founder</span>
+                  <span className="ap-display font-800 text-[#07152E]" style={{ fontSize: 36, lineHeight: 1 }}>2019</span>
+                  <span className="ap-display font-700 uppercase text-[#07152E]" style={{ fontSize: 9, letterSpacing: '0.2em', marginTop: 4, display: 'block' }}>Founded</span>
                 </div>
               </div>
 
@@ -464,13 +478,13 @@ export default function About() {
 
                 <div className="flex flex-col gap-4" style={{ color: '#4B5563', fontSize: '15px', lineHeight: 1.8 }}>
                   <p>
-                    <strong style={{ color: '#0A1F44', fontWeight: 600 }}>Raniero Engineering Nig. Limited was established in 2019</strong> with a clear and deliberate purpose — to provide clients across Nigeria with access to wide-ranging, efficient, and professionally managed engineering solutions.
+                    <strong style={{ color: '#0A1F44', fontWeight: 600 }}>Raniero Engineering Nig. Limited was established in 2019</strong> with a clear and deliberate purpose to provide clients across Nigeria with access to wide-ranging, efficient, and professionally managed engineering solutions.
                   </p>
                   <p>
                     Founded at a time when the Nigerian engineering landscape demanded more accountability, more flexibility, and more genuine value from its service providers, Raniero set out to be different. Not just in what we deliver, but in <em style={{ color: '#0A1F44' }}>how</em> we deliver it.
                   </p>
                   <p>
-                    Our approach has always been client-first. We recognised early that every client operates within unique constraints — different budgets, different timelines, different expectations. So we built an organisation that could flex to meet those constraints without compromising on quality or cutting corners.
+                    Our approach has always been client-first. We recognised early that every client operates within unique constraints including different budgets, different timelines, different expectations. So we built an organisation that could flex to meet those constraints without compromising on quality or cutting corners.
                   </p>
                   <p>
                     Today, Raniero Engineering serves clients across commercial construction, oil and gas, manufacturing, and corporate facilities — providing services that span the full engineering lifecycle, from <strong style={{ color: '#0A1F44', fontWeight: 600 }}>conceptualization through design to execution and audit.</strong>
@@ -480,7 +494,7 @@ export default function About() {
                 <div className="ap-rule-light" />
 
                 {/* Timeline */}
-                <div className="flex flex-col gap-0">
+                {/* <div className="flex flex-col gap-0">
                   {timeline.map((item, i) => (
                     <div key={i} className="ap-timeline-item pb-6">
                       <div className="ap-timeline-line">
@@ -496,7 +510,7 @@ export default function About() {
                       </div>
                     </div>
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -535,10 +549,10 @@ export default function About() {
                 </h3>
                 <div className="ap-rule-white" />
                 <p className="ap-serif" style={{ color: 'rgba(255,255,255,0.7)', fontSize: '16px', lineHeight: 1.8, fontStyle: 'italic' }}>
-                  "To provide clients with wide-ranging, efficient engineering solutions — delivered with flexibility, within budget, and on time — by a professionally driven team that puts integrity above all else."
+                  "To provide clients with wide-ranging, efficient engineering solutions delivered with flexibility, within budget, and on time by a professionally driven team that puts integrity above all else."
                 </p>
                 <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '14px', lineHeight: 1.7, marginTop: 8 }}>
-                  Every service we offer, every project we take on, and every relationship we build is guided by this mission. It is not a statement on a wall — it is the standard we hold ourselves to on every engagement.
+                  Every service we offer, every project we take on, and every relationship we build is guided by this mission. It is not a statement on a wall, it is the standard we hold ourselves to on every engagement.
                 </p>
               </div>
 
@@ -558,10 +572,10 @@ export default function About() {
                 </h3>
                 <div className="ap-rule-light" />
                 <p className="ap-serif" style={{ color: '#374151', fontSize: '16px', lineHeight: 1.8, fontStyle: 'italic' }}>
-                  "To become one of the most reliable and respected engineering solution providers globally — known not just for what we build, but for how we build it."
+                  "To become one of the most reliable and respected engineering solution providers globally known not just for what we build, but for how we build it."
                 </p>
                 <p style={{ color: '#6B7280', fontSize: '14px', lineHeight: 1.7, marginTop: 8 }}>
-                  We are a Nigerian company with global ambitions. Our sights are set beyond our borders — to a future where Raniero Engineering is synonymous with trust, excellence, and value in engineering circles worldwide.
+                  We are a Nigerian company with global ambitions. Our sights are set beyond our borders to a future where Raniero Engineering is synonymous with trust, excellence, and value in engineering circles worldwide.
                 </p>
                 {/* Globe visual */}
                 <div style={{ marginTop: 'auto', paddingTop: 20, display: 'flex', gap: 12, flexWrap: 'wrap' }}>
@@ -572,7 +586,7 @@ export default function About() {
                       background: i === 0 ? 'rgba(59,130,246,0.15)' : i === 1 ? 'rgba(59,130,246,0.08)' : 'rgba(59,130,246,0.04)',
                       color: '#3B82F6', border: '1px solid rgba(59,130,246,0.2)',
                     }}>
-                      {i === 2 ? '🌍 ' : ''}{region}
+                      {i === 2 ? ' ' : ''}{region}
                     </span>
                   ))}
                 </div>
@@ -601,7 +615,7 @@ export default function About() {
                 </h2>
               </div>
               <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '15px', lineHeight: 1.7, maxWidth: 400 }}>
-                These six values are not aspirational — they are operational. They guide every decision, every interaction, and every deliverable we produce.
+                These values are not aspirational they are operational. They guide every decision, every interaction, and every deliverable we produce.
               </p>
             </div>
 
@@ -649,7 +663,7 @@ export default function About() {
               {/* CEO Image */}
               <div className="ap-ceo-img-wrap w-full lg:w-96 flex-shrink-0" style={{ height: 520, position: 'relative' }}>
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&auto=format&fit=crop&face"
+                  src="/images/ceo.jpeg"
                   alt="CEO — Raniero Engineering"
                   className="ap-ceo-img"
                   style={{ width: '100%', height: '100%' }}
@@ -657,7 +671,7 @@ export default function About() {
                 <div className="ap-ceo-overlay" />
                 <div className="ap-ceo-name-badge">
                   <p className="ap-display font-800 uppercase text-white" style={{ fontSize: '20px', letterSpacing: '0.01em' }}>
-                    [CEO Name]
+                    CEO's Name
                   </p>
                   <p style={{ color: '#F59E0B', fontSize: '13px', fontWeight: 600, marginTop: 2 }}>
                     Chief Executive Officer
@@ -674,7 +688,7 @@ export default function About() {
               <div className="flex-1 flex flex-col gap-6">
                 <span className="ap-ceo-quote-mark">"</span>
                 <blockquote className="ap-serif" style={{ fontSize: 'clamp(18px, 2.5vw, 24px)', color: '#0A1F44', lineHeight: 1.75, fontStyle: 'italic', marginTop: -24 }}>
-                  Our approach in doing business is anchored on integrity, simplicity and value for investment. We don't just deliver projects — we build lasting partnerships with every client we serve.
+                  Our approach in doing business is anchored on integrity, simplicity and value for investment. We don't just deliver projects, we build lasting partnerships with every client we serve.
                 </blockquote>
 
                 <div className="ap-rule-light" />
@@ -684,7 +698,7 @@ export default function About() {
                     With a deep passion for engineering excellence and a belief that Nigerian businesses deserve world-class technical support, our founder established Raniero Engineering to fill a critical gap in the market.
                   </p>
                   <p>
-                    Under their leadership, the company has grown from a focused startup into a multi-discipline engineering firm serving clients across several industry sectors — with an eye firmly fixed on the global stage.
+                    Under their leadership, the company has grown from a focused startup into a multi-discipline engineering firm serving clients across several industry sectors with an eye firmly fixed on the global stage.
                   </p>
                 </div>
 
@@ -692,8 +706,8 @@ export default function About() {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-2">
                   {[
                     { label: 'Founded', value: '2019' },
-                    { label: 'Sector Experience', value: '10+ Yrs' },
-                    { label: 'Disciplines', value: '8 Areas' },
+                    { label: 'Sector Experience', value: '7+ Yrs' },
+                    { label: 'Disciplines', value: '8+ Areas' },
                   ].map((c, i) => (
                     <div key={i} style={{ padding: '16px', background: '#fff', border: '1px solid #E5E7EB', textAlign: 'center' }}>
                       <p className="ap-display font-800 text-[#0A1F44]" style={{ fontSize: '24px', letterSpacing: '-0.01em' }}>{c.value}</p>
@@ -701,14 +715,6 @@ export default function About() {
                     </div>
                   ))}
                 </div>
-
-                {/* placeholder note */}
-                <p style={{ fontSize: '12px', color: '#9CA3AF', fontStyle: 'italic', display: 'flex', alignItems: 'center', gap: 6 }}>
-                  <svg style={{ width: 13, height: 13, flexShrink: 0 }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="10" /><path d="M12 8v4M12 16h.01" />
-                  </svg>
-                  Replace [CEO Name] and the placeholder photo with the actual CEO's name and portrait before going live.
-                </p>
               </div>
             </div>
           </div>
@@ -728,14 +734,14 @@ export default function About() {
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
-              <Link to="/#contact" className="ap-btn-amber">
+              <Link to="/contact" className="ap-btn-amber">
                 Request Consultation
                 <svg style={{ width: 14, height: 14 }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </Link>
-              <Link to="/#services" className="ap-btn-white-outline">
-                Explore Our Services
+              <Link to="/projects" className="ap-btn-white-outline">
+                Explore our projects
               </Link>
             </div>
           </div>

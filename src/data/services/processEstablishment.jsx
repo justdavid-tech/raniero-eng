@@ -7,7 +7,7 @@
 export const processEstablishmentData = {
 
   // ── Brand accent color for this service ──────────────────────────────────
-  accent: '#0EA5E9',
+  accent: '#F59E0B',
 
   // ── HERO ─────────────────────────────────────────────────────────────────
   hero: {
@@ -15,17 +15,17 @@ export const processEstablishmentData = {
     category: 'Engineering Services',
     headline: 'Designing Efficient\nOperational Systems.',
     subtitle: 'We develop structured, scalable, and compliant operational processes that optimise performance, improve consistency, and drive sustainable growth.',
-    image:    'https://images.unsplash.com/photo-1581092918484-8313e4f07e9d?w=1800&q=80&auto=format&fit=crop',
+    image:    '/images/processestablishment.jpeg',
     stats: [
-      { value: '150+', label: 'Processes Designed' },
+      { value: '10+', label: 'Processes Designed' },
       { value: '6+',   label: 'Years Experience' },
-      { value: '100%', label: 'Operational Compliance' },
+      { value: '92%', label: 'Operational Compliance' },
     ],
   },
 
   // ── OVERVIEW ──────────────────────────────────────────────────────────────
   overview: {
-    image:      'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=900&q=80&auto=format&fit=crop',
+    image:      '/images/processestablishment-two.jpeg',
     statValue:  'ISO',
     statLabel:  'Aligned Frameworks',
     heading:    'What is Process\nEstablishment at Raniero?',

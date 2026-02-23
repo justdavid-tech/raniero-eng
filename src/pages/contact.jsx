@@ -23,11 +23,11 @@ const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';
 
 // ── Contact details — replace with real info ──────────────────────────────────
 const CONTACT_INFO = {
-  phone:    '+234 800 000 0000',
-  whatsapp: '2348000000000',   // international format, no + or spaces
-  email:    'info@ranieroengineering.com',
-  address:  'Plot 12, Engineering Close, GRA Phase 2, Port Harcourt, Rivers State, Nigeria.',
-  mapSrc:   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126092.1!2d6.9!3d4.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cdf1!2sPort+Harcourt!5e0!3m2!1sen!2sng!4v1700000000000',
+  phone:    ['+234 815 259 8520', '+234 803 825 8927', '+234 909 156 4695'],
+  whatsapp: '2348152598520',   // international format, no + or spaces
+  email:    'ranieroengineering@gmail.com',
+  address:  'Plot 12, Engineering Close, GRA Phase 2, Abuja, Nigeria.',
+  mapSrc:   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126093.78244406018!2d7.367466896072045!3d9.024416365005285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e745f4cd62fd9%3A0x53bd17b4a20ea12b!2sAbuja%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1771845484392!5m2!1sen!2sng',
   socials: [
     {
       name: 'LinkedIn',
@@ -385,7 +385,7 @@ export default function Contact() {
                 </h1>
               </div>
               <p style={{ color: 'rgba(255,255,255,0.55)', fontSize: '16px', lineHeight: 1.7, maxWidth: 400 }}>
-                Whether you have a project in mind, need a consultation, or simply want to learn more about our services — we'd love to hear from you.
+                Whether you have a project in mind, need a consultation, or simply want to learn more about our services, we'd love to hear from you.
               </p>
             </div>
 
@@ -471,7 +471,7 @@ export default function Contact() {
                           <input
                             className={`cp-input ${errors.email ? 'error' : ''}`}
                             type="email" name="from_email"
-                            placeholder="you@company.com"
+                            placeholder="emeka@gmail.com"
                             value={fields.email}
                             onChange={handleChange}
                           />
@@ -553,17 +553,20 @@ export default function Contact() {
                     <p className="cp-display font-700 uppercase text-[#0A1F44]" style={{ fontSize: '15px', letterSpacing: '0.05em' }}>Contact Details</p>
                   </div>
 
-                  <InfoCard
-                    label="Phone"
-                    value={CONTACT_INFO.phone}
-                    href={`tel:${CONTACT_INFO.phone}`}
-                    accent="#F59E0B"
-                    icon={
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.12 1.18 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l1.38-.45-.01.01z" />
-                      </svg>
-                    }
-                  />
+                  {CONTACT_INFO.phone.map((num, i) => (
+                    <InfoCard
+                      key={num}
+                      label={i === 0 ? 'Phone' : `Alternate Phone ${i}`}
+                      value={num}
+                      href={`tel:${num}`}
+                      accent="#F59E0B"
+                      icon={
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.12 1.18 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l1.38-.45-.01.01z" />
+                        </svg>
+                      }
+                    />
+                  ))}
 
                   <InfoCard
                     label="Email Address"
@@ -657,7 +660,7 @@ export default function Contact() {
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" />
                 </svg>
                 <p className="cp-display font-700 uppercase text-[#0A1F44]" style={{ fontSize: '13px', letterSpacing: '0.08em' }}>
-                  Our Location — Port Harcourt, Rivers State
+                  Our Location: Abuja, Nigeria
                 </p>
               </div>
               <iframe

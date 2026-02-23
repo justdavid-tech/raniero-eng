@@ -194,7 +194,7 @@ export default function Navbar() {
                           </a>
                         ))}
                         <a
-                          href="#services"
+                          href="/services"
                           onClick={() => setDropdownOpen(false)}
                           className="flex items-center justify-center gap-2 px-4 py-3 bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 hover:text-amber-300 text-[12px] font-600 tracking-[0.1em] uppercase transition-colors duration-150"
                         >
