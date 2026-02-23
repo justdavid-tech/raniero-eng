@@ -4,7 +4,7 @@ const pillars = [
     keyword: "Integrity",
     headline: "We Do What\nWe Say",
     description:
-      "Every commitment we make is a promise we keep. Our operations are built on transparency, honesty, and accountability — from the first consultation to final project handover.",
+      "Every commitment we make is a promise we keep. Our operations are built on transparency, honesty, and accountability from the first consultation to final project handover.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
@@ -18,7 +18,7 @@ const pillars = [
     keyword: "Simplicity",
     headline: "Complex Problems,\nClear Solutions",
     description:
-      "We cut through technical complexity to deliver straightforward, elegant engineering solutions. No jargon, no bloat — just efficient, well-communicated results your team can act on.",
+      "We cut through technical complexity to deliver straightforward, elegant engineering solutions. No jargon, no bloat, just efficient, well-communicated results your team can act on.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" />
@@ -47,7 +47,7 @@ const pillars = [
     keyword: "Team",
     headline: "Driven by\nReal Professionals",
     description:
-      "Our multidisciplinary team brings deep industry expertise across project management, design, auditing, and logistics — professionally trained and results-oriented at every level.",
+      "Our multidisciplinary team brings deep industry expertise across project management, design, auditing, and logistics professionally trained and results-oriented at every level.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round">
         <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
@@ -340,13 +340,13 @@ export default function WhyChooseUs() {
 
             {/* CTA buttons */}
             <div className="flex flex-col sm:flex-row lg:flex-col gap-3 justify-center">
-              <a href="#contact" className="wcu-btn-amber">
+              <a href="/contact" className="wcu-btn-amber">
                 Request Consultation
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </a>
-              <a href="#about" className="wcu-btn-outline">
+              <a href="/about" className="wcu-btn-outline">
                 Learn About Us
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M12 5l7 7-7 7" />

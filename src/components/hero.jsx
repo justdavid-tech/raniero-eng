@@ -7,10 +7,10 @@ const slides = [
     badge: "Phase 01 — Project Delivery",
     headline: "Engineering\nVisions Into\nReality",
     subtext:
-      "From conceptualization to execution, we deliver precision-engineered solutions on time and within budget — every project, every time.",
+      "From conceptualization to execution, we deliver precision-engineered solutions on time and within budget for every project, every time.",
     cta: { primary: "Request Consultation", secondary: "Our Projects" },
     stats: [
-      { value: "200+", label: "Projects Delivered" },
+      { value: "120+", label: "Projects Delivered" },
       { value: "6+", label: "Years Experience" },
       { value: "100%", label: "Client Commitment" },
     ],
@@ -21,12 +21,12 @@ const slides = [
     badge: "Phase 02 — Expert Management",
     headline: "Managed With\nPrecision,\nBuilt to Last",
     subtext:
-      "Our professionally driven team provides end-to-end engineering management — from facility oversight to logistics and process establishment for industries.",
+      "Our professionally driven team provides end-to-end engineering management from facility oversight to logistics and process establishment for industries.",
     cta: { primary: "Explore Services", secondary: "Meet Our Team" },
     stats: [
-      { value: "8", label: "Core Services" },
+      { value: "12", label: "Core Services" },
       { value: "24/7", label: "Support Available" },
-      { value: "ISO", label: "Grade Standards" },
+      { value: "99%", label: "On-Time Delivery" },
     ],
   },
   {
@@ -35,11 +35,11 @@ const slides = [
     badge: "Phase 03 — Global Ambition",
     headline: "Your Trusted\nEngineering\nPartner",
     subtext:
-      "Anchored on integrity, simplicity and value for investment — Raniero Engineering is strategically positioned to become a globally reliable engineering solution provider.",
+      "Anchored on integrity, simplicity and value for investment, Raniero Engineering is strategically positioned to become a globally reliable engineering solution provider.",
     cta: { primary: "Get a Quote", secondary: "About Raniero" },
     stats: [
       { value: "3+", label: "Sectors Served" },
-      { value: "₦B+", label: "Assets Valued" },
+      { value: "₦M+", label: "Assets Valued" },
       { value: "EST.", label: "2019" },
     ],
   },

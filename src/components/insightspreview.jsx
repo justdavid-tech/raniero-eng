@@ -19,13 +19,13 @@ const CATEGORY_LABELS = {
 };
 
 const CATEGORY_COLORS = {
-  'project-management':   '#F59E0B',
+  'project-management':   '#3B82F6',
   'engineering-insights': '#3B82F6',
-  'facility-management':  '#10B981',
-  'industry-trends':      '#8B5CF6',
-  'cost-engineering':     '#EF4444',
-  'training-development': '#F59E0B',
-  'oil-gas':              '#6B7280',
+  'facility-management':  '#3B82F6',
+  'industry-trends':      '#3B82F6',
+  'cost-engineering':     '#3B82F6',
+  'training-development': '#3B82F6',
+  'oil-gas':              '#3B82F6',
   'company-news':         '#3B82F6',
 };
 
@@ -290,7 +290,7 @@ export default function InsightsPreview() {
             </div>
             <div className="flex flex-col gap-4 max-w-sm">
               <p className="text-[#6B7280] leading-relaxed" style={{ fontSize: '15px' }}>
-                Practical insights, industry trends, and engineering perspectives from the Raniero team — published regularly to keep you informed.
+                Practical insights, industry trends, and engineering perspectives from the Raniero team. Published regularly to keep you informed.
               </p>
               <Link to="/insights" className="ins-cta self-start">
                 View All Articles

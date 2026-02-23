@@ -17,9 +17,12 @@ import ProcessEstablishment from './pages/services/processEstablishment';
 import EngineeringAudit   from './pages/services/EngineeringAudit';
 import CostEngineering    from './pages/services/costEngineering';
 
-
+import ScrollToTop from './components/ScrollToTop'
+import ScrollToTopButton from './components/ScrollToTopButton'
 function App() {
   return (
+    <>
+    <ScrollToTop />  
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
@@ -39,6 +42,8 @@ function App() {
       <Route path="/services/audit"    element={<EngineeringAudit />} />
       <Route path="/services/cost-engineering"     element={<CostEngineering />} />
     </Routes>
+    <ScrollToTopButton />
+    </>
   )
 }
 

@@ -10,8 +10,8 @@ const services = [
       </svg>
     ),
     title: "Project Management",
-    short: "End-to-end project oversight — scope, schedule, budget, and stakeholder coordination — ensuring seamless delivery from initiation to closeout.",
-    href: "/project-management",
+    short: "End-to-end project oversight, scope, schedule, budget, and stakeholder coordination ensuring seamless delivery from initiation to closeout.",
+    href: "/services/project-management",
     accent: "#F59E0B",
   },
   {
@@ -25,7 +25,7 @@ const services = [
     ),
     title: "Corporate Engineering Training",
     short: "Structured, industry-aligned training programs that sharpen your engineering team's capabilities and accelerate organisational performance.",
-    href: "/corporate-training",
+    href: "/services/corporate-training",
     accent: "#F59E0B",
   },
   {
@@ -37,8 +37,8 @@ const services = [
       </svg>
     ),
     title: "Facility   Management",
-    short: "Comprehensive facility operations, maintenance, and home movement services — keeping your assets performing at peak efficiency.",
-    href: "/facility-management",
+    short: "Comprehensive facility operations, maintenance, and home movement services keeping your assets performing at peak efficiency.",
+    href: "/services/facility-management",
     accent: "#F59E0B",
   },
   {
@@ -51,8 +51,8 @@ const services = [
       </svg>
     ),
     title: "Design & Execution",
-    short: "Rigorous engineering design paired with disciplined on-site execution — translating blueprints into world-class infrastructure.",
-    href: "/design-execution",
+    short: "Rigorous engineering design paired with disciplined on-site execution translating blueprints into world-class infrastructure.",
+    href: "/services/design-execution",
     accent: "#F59E0B",
   },
   {
@@ -67,7 +67,7 @@ const services = [
     ),
     title: "Logistics Services",
     short: "Strategic operation and logistics planning that optimises resource flow, reduces cost, and keeps complex engineering projects on schedule.",
-    href: "/logistics-services",
+    href: "/services/logistics-services",
     accent: "#F59E0B",
   },
   {
@@ -83,7 +83,7 @@ const services = [
     ),
     title: "Process Establishment",
     short: "Designing and implementing robust operational processes and procedures tailored to your industry's regulatory and performance requirements.",
-    href: "/process-establishment",
+    href: "/services/process-establishment",
     accent: "#F59E0B",
   },
   {
@@ -96,7 +96,7 @@ const services = [
     ),
     title: "Engineering Project Audit",
     short: "Independent technical audits that verify compliance, identify risk, and validate that your engineering projects meet quality and safety benchmarks.",
-    href: "/engineering-audit",
+    href: "/services/engineering-audit",
     accent: "#F59E0B",
   },
   {
@@ -109,7 +109,7 @@ const services = [
     ),
     title: "Cost Engineering & Asset Valuation",
     short: "Accurate cost estimation, budget control, and engineering asset valuation to protect your investment and maximise long-term project value.",
-    href: "/cost-engineering",
+    href: "/servicces/cost-engineering",
     accent: "#F59E0B",
   },
 ];
@@ -302,7 +302,7 @@ export default function Services() {
                 className="text-[#6B7280] leading-relaxed max-w-md"
                 style={{ fontSize: "15px" }}
               >
-                We offer a comprehensive range of engineering management services — built on integrity, delivered with precision, and designed to maximise value for every client.
+                We offer a comprehensive range of engineering management services built on integrity, delivered with precision, and designed to maximise value for every client.
               </p>
             </div>
 

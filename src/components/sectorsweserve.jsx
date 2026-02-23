@@ -6,7 +6,7 @@ const sectors = [
     description:
       "We support upstream and downstream operations with rigorous engineering audits, cost valuation, process establishment, and logistics management — ensuring compliance, safety, and operational efficiency across critical energy assets.",
     services: ["Engineering Audit", "Cost Engineering", "Process Establishment", "Logistics Services"],
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=900&q=80&auto=format&fit=crop",
+    image: "/images/oilandgas.jpeg",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 2v6M8 4l4-2 4 2" />
@@ -25,7 +25,7 @@ const sectors = [
     description:
       "From multi-storey complexes to commercial developments, we provide full project management and design-execution services — delivering on time, within budget, and to the highest structural standards.",
     services: ["Project Management", "Design & Execution", "Engineering Audit", "Cost Engineering"],
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80&auto=format&fit=crop",
+    image: "/images/Construction.jpeg",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round">
         <rect x="3" y="9" width="18" height="13" rx="1" />
@@ -44,7 +44,7 @@ const sectors = [
     description:
       "We help manufacturing facilities establish robust operational processes, safety procedures, and logistics frameworks — setting up greenfield plants and improving existing industrial operations for peak performance.",
     services: ["Process Establishment", "Facility Management", "Logistics Services", "Project Management"],
-    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=900&q=80&auto=format&fit=crop",
+    image: "/images/manufacturing.jpeg",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round">
         <path d="M2 20h20" />
@@ -64,7 +64,7 @@ const sectors = [
     description:
       "We manage corporate facilities end-to-end from space audits and home movement coordination to maintenance systems and operational restructuring keeping your business environment running smoothly.",
     services: ["Facility Management", "Corporate Training", "Engineering Audit", "Cost Engineering"],
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80&auto=format&fit=crop",
+    image: "/images/corporate.jpeg",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round">
         <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
@@ -354,7 +354,7 @@ export default function SectorsWeServe() {
               className="text-[#6B7280] leading-relaxed max-w-md"
               style={{ fontSize: "15px" }}
             >
-              Raniero Engineering brings focused expertise across four key sectors — delivering tailored engineering solutions that address the specific challenges and demands of each industry.
+              Raniero Engineering brings focused expertise across four key sectors delivering tailored engineering solutions that address the specific challenges and demands of each industry.
             </p>
           </div>
 
@@ -431,7 +431,7 @@ export default function SectorsWeServe() {
                   <div className="sec-rule" />
 
                   {/* Link */}
-                  <a href="#contact" className="sec-link" style={{ color: s.accent }}>
+                  <a href="/contact" className="sec-link" style={{ color: s.accent }}>
                     Work With Us
                     <svg
                       className="sec-link-arrow"
@@ -461,16 +461,16 @@ export default function SectorsWeServe() {
               </p>
             </div>
             <div className="relative z-10 flex flex-col sm:flex-row gap-3 flex-shrink-0">
-              <a href="#contact" className="sec-cta-btn">
+              <a href="/contact" className="sec-cta-btn">
                 Request Consultation
                 <svg style={{ width: 14, height: 14 }} viewBox="0 0 24 24" fill="none"
                      stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </a>
-              <a href="#services" className="sec-display inline-flex items-center gap-2 font-700 uppercase text-white border border-white/25 hover:border-white/60 px-8 py-4 transition-colors"
+              <a href="/projects" className="sec-display inline-flex items-center gap-2 font-700 uppercase text-white border border-white/25 hover:border-white/60 px-8 py-4 transition-colors"
                  style={{ fontSize: "13px", letterSpacing: "0.1em" }}>
-                Our Services
+                Our Projects
               </a>
             </div>
           </div>

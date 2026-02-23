@@ -25,14 +25,14 @@ const CATEGORY_LABELS = {
 };
 
 const CATEGORY_COLORS = {
-  'project-management':   '#F59E0B',
-  'engineering-insights': '#F59E0B',
-  'facility-management':  '#F59E0B',
-  'industry-trends':      '#F59E0B',
-  'cost-engineering':     '#F59E0B',
-  'training-development': '#F59E0B',
-  'oil-gas':              '#F59E0B',
-  'company-news':         '#F59E0B',
+  'project-management':   '#3B82F6',
+  'engineering-insights': '#3B82F6',
+  'facility-management':  '#3B82F6',
+  'industry-trends':      '#3B82F6',
+  'cost-engineering':     '#3B82F6',
+  'training-development': '#3B82F6',
+  'oil-gas':              '#3B82F6',
+  'company-news':         '#3B82F6',
 };
 
 function formatDate(iso) {

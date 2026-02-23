@@ -7,7 +7,7 @@ const testimonials = [
     role: "CEO",
     company: "Okonkwo & Partners Ltd",
     sector: "Commercial Construction",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80&auto=format&fit=crop&face",
+    image: "/images/testimonies-1.jpeg",
     quote:
       "Raniero Engineering handled our commercial complex project from design to final handover with remarkable professionalism. They kept us informed at every stage, respected our budget, and delivered ahead of schedule. I would not hesitate to engage them again.",
     rating: 5,
@@ -18,7 +18,7 @@ const testimonials = [
     role: "Head of Operations",
     company: "Meridian Facilities Group",
     sector: "Facility Management",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80&auto=format&fit=crop&face",
+    image: "/images/testimonies-2.jpeg",
     quote:
       "Their facility management approach is thorough and systematic. The team audited our entire 8,000 sqm HQ, identified inefficiencies we had missed for years, and implemented a maintenance structure that has significantly reduced our operational costs.",
     rating: 5,
@@ -29,7 +29,7 @@ const testimonials = [
     role: "Plant Director",
     company: "NorthStar Manufacturing",
     sector: "Industrial Setup",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80&auto=format&fit=crop&face",
+    image: "/images/testimonies-3.jpeg",
     quote:
       "Setting up our manufacturing plant's operational processes was a complex undertaking. Raniero brought clarity, structure, and deep technical knowledge. What could have taken us 18 months, they helped us achieve in under 10 — compliantly and safely.",
     rating: 5,
@@ -40,7 +40,7 @@ const testimonials = [
     role: "Finance Director",
     company: "Eze Energy Resources",
     sector: "Oil & Gas",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&q=80&auto=format&fit=crop&face",
+    image: "/images/testimonies-4.jpeg",
     quote:
       "The engineering asset valuation Raniero provided was precise, well-documented, and stood up to every regulatory requirement. Their cost engineering team clearly understands the oil and gas landscape in Nigeria. Exceptional value for money.",
     rating: 5,
@@ -51,7 +51,7 @@ const testimonials = [
     role: "Project Manager",
     company: "Adeyemi Infrastructure Group",
     sector: "Project Management",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80&auto=format&fit=crop&face",
+    image: "/images/testimonies-5.jpeg",
     quote:
       "What sets Raniero apart is their integrity. There were no hidden costs, no vague timelines, and no surprises. They communicated clearly throughout our bridge infrastructure project and delivered exactly what was promised. A rare quality in this industry.",
     rating: 5,
@@ -61,8 +61,8 @@ const testimonials = [
     name: "Ngozi Okafor",
     role: "Managing Director",
     company: "CrestLine Properties",
-    sector: "Engineering Audit",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80&auto=format&fit=crop&face",
+    sector: "Engineering AEmeka OkonkwoEmeka OkonkwoEmeka OkonkwoEmeka OkonkwoEmeka Okonkwoudit",
+    image: "/images/testimonies-6.jpeg",
     quote:
       "Raniero conducted an independent audit of three of our real estate assets before acquisition. Their report was thorough, honest, and potentially saved us from a very costly mistake. That level of diligence is exactly what you want in an engineering partner.",
     rating: 5,
@@ -499,18 +499,6 @@ export default function Testimonials() {
               ))}
             </div>
           </div>
-
-          {/* ── BOTTOM NOTE ── */}
-          <div className="mt-10 flex items-center gap-3 border-t border-white/10 pt-8">
-            <svg style={{ width: 15, height: 15, color: "#F59E0B", flexShrink: 0 }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="12" cy="12" r="10" />
-              <path d="M12 8v4M12 16h.01" />
-            </svg>
-            <p className="text-white/30 italic" style={{ fontSize: "12px" }}>
-              These are placeholder testimonials. Replace with verified client feedback before going live.
-            </p>
-          </div>
-
         </div>
       </section>
     </>

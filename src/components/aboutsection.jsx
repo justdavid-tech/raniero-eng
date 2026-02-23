@@ -226,13 +226,13 @@ export default function AboutSection() {
               {/* Story */}
               <div className="flex flex-col gap-4">
                 <p className="abt-story-text">
-                  <strong>Raniero Engineering Nig. Limited</strong> was established in <strong>2019</strong> with a clear mission — to provide wide-ranging, efficient engineering solutions to clients who deserve better than average.
+                  <strong>Raniero Engineering Nig. Limited</strong> was established in <strong>2019</strong> with a clear mission to provide wide-ranging, efficient engineering solutions to clients who deserve better than average.
                 </p>
                 <p className="abt-story-text">
-                  Strategically positioned across Nigeria, we've built our reputation on a simple but powerful idea: that great engineering is not just about technical excellence — it's about <strong>flexibility, integrity, and genuine value for every naira invested.</strong>
+                  Strategically positioned in Nigeria, we've built our reputation on a simple but powerful idea: that great engineering is not just about technical excellence it's about <strong>flexibility, integrity, and genuine value for every naira invested.</strong>
                 </p>
                 <p className="abt-story-text">
-                  From the first consultation through to project closeout, our professionally driven team walks with every client — ensuring solutions are delivered <strong>on time, within budget, and to the highest standards.</strong>
+                  From the first consultation through to project closeout, our professionally driven team walks with every client ensuring solutions are delivered <strong>on time, within budget, and to the highest standards.</strong>
                 </p>
               </div>
 
@@ -267,7 +267,7 @@ export default function AboutSection() {
                       Globally Ambitious
                     </p>
                     <p style={{ fontSize: '13px', color: 'rgba(255,255,255,0.5)', marginTop: 3, lineHeight: 1.6 }}>
-                      Our goal is to become one of the most reliable engineering solution providers — not just in Nigeria, but globally.
+                      Our goal is to become one of the most reliable engineering solution providers not just in Nigeria, but globally.
                     </p>
                   </div>
                 </div>
@@ -283,7 +283,7 @@ export default function AboutSection() {
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
                 </Link>
-                <a href="#contact" className="abt-btn-outline">
+                <a href="/contact" className="abt-btn-outline">
                   Work With Us
                 </a>
               </div>
@@ -314,7 +314,7 @@ export default function AboutSection() {
                 style={{ height: '520px', position: 'relative' }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80&auto=format&fit=crop"
+                  src="/images/aboutsection.jpeg"
                   alt="Raniero Engineering — construction and project management"
                   className="abt-img-main"
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }}

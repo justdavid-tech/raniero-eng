@@ -80,12 +80,46 @@ const coreValues = [
 
 // ── Timeline ──────────────────────────────────────────────────────────────────
 const timeline = [
-  { year: "2019", title: "Company Founded", desc: "Raniero Engineering Nig. Limited is established with a vision to deliver reliable engineering solutions across Nigeria." },
-  { year: "2020", title: "First Major Projects", desc: "Successfully delivered our first set of facility management and project management engagements for corporate clients." },
-  { year: "2021", title: "Service Expansion", desc: "Expanded our portfolio to include engineering project audits, cost engineering, and asset valuation services." },
-  { year: "2022", title: "Industrial Growth", desc: "Entered the oil & gas and manufacturing sectors, providing process establishment and logistics management services." },
-  { year: "2023", title: "Corporate Training Launch", desc: "Launched our corporate engineering management training programme, equipping teams across multiple organisations." },
-  { year: "2024+", title: "Global Ambition", desc: "Setting our sights beyond Nigeria — positioning Raniero Engineering as a globally recognised engineering solution provider." },
+  { 
+    year: "2019", 
+    title: "Company Founded", 
+    desc: "Raniero Engineering Nig. Limited was established with a vision to deliver reliable, innovative, and client-focused engineering solutions across Nigeria." 
+  },
+  { 
+    year: "2020", 
+    title: "First Major Projects", 
+    desc: "Successfully delivered our first facility management and project management engagements for corporate clients, building a reputation for quality and timely execution." 
+  },
+  { 
+    year: "2021", 
+    title: "Service Expansion", 
+    desc: "Expanded our portfolio to include engineering project audits, cost engineering, and asset valuation services — strengthening our technical depth." 
+  },
+  { 
+    year: "2022", 
+    title: "Industrial Growth", 
+    desc: "Entered the oil & gas and manufacturing sectors, providing process establishment, logistics management, and multidisciplinary engineering support." 
+  },
+  { 
+    year: "2023", 
+    title: "Corporate Training Launch", 
+    desc: "Launched our Corporate Engineering Management Training Programme, equipping professionals and organisations with practical engineering and leadership expertise." 
+  },
+  { 
+    year: "2024", 
+    title: "Operational Strengthening", 
+    desc: "Enhanced internal systems, quality control processes, and compliance frameworks to improve efficiency, transparency, and project delivery standards." 
+  },
+  { 
+    year: "2025", 
+    title: "Regional Expansion", 
+    desc: "Expanded operations beyond core markets, building strategic partnerships and increasing presence across multiple regions in Nigeria and West Africa." 
+  },
+  { 
+    year: "2026", 
+    title: "Global Positioning", 
+    desc: "Positioned Raniero Engineering as a globally competitive engineering solutions provider through innovation, strategic collaborations, and international project engagements." 
+  },
 ];
 
 export default function About() {
@@ -389,7 +423,7 @@ export default function About() {
                 </h1>
               </div>
               <p className="ap-fade-up ap-fade-up-3 text-blue-200/60 leading-relaxed max-w-md" style={{ fontSize: '16px' }}>
-                Since 2019, Raniero Engineering Nig. Limited has been strategically positioned to deliver wide-ranging, efficient engineering solutions — anchored on integrity, driven by purpose.
+                Since 2019, Raniero Engineering Nig. Limited has been strategically positioned to deliver wide-ranging, efficient engineering solutions anchored on integrity, driven by purpose.
               </p>
             </div>
           </div>
@@ -406,15 +440,15 @@ export default function About() {
               {/* Image */}
               <div className="w-full lg:w-[480px] flex-shrink-0 ap-story-img-wrap" style={{ height: 520 }}>
                 <img
-                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80&auto=format&fit=crop"
-                  alt="Raniero Engineering construction project"
+                  src="/images/ceo.jpeg"
+                  alt="CEO of Raniero Engineering Nig Limited"
                   className="ap-story-img"
                 />
                 <div className="ap-story-corner-tl" />
                 <div className="ap-story-corner-br" />
                 <div className="ap-story-year-badge">
-                  <span className="ap-display font-800 text-[#07152E]" style={{ fontSize: 36, lineHeight: 1 }}>2019</span>
-                  <span className="ap-display font-700 uppercase text-[#07152E]" style={{ fontSize: 9, letterSpacing: '0.2em', marginTop: 4, display: 'block' }}>Founded</span>
+                  <span className="ap-display font-800 text-[#07152E]" style={{ fontSize: 36, lineHeight: 1 }}>CEO</span>
+                  <span className="ap-display font-700 uppercase text-[#07152E]" style={{ fontSize: 9, letterSpacing: '0.2em', marginTop: 4, display: 'block' }}>Founder</span>
                 </div>
               </div>
 
