@@ -1,0 +1,114 @@
+[
+{
+  "id": 1,
+  "title": "Multi-Storey Institutional Building Construction",
+  "category": "Civil Engineering",
+  "location": "Abuja, Nigeria",
+  "year": "2025",
+  "image": "/images/building-five.jpg",
+  "tags": [
+    "Building Construction",
+    "Structural Works",
+    "Scaffolding",
+    "Concrete",
+    "Project Management"
+  ],
+  "summary": "Ongoing construction of a three-storey reinforced concrete institutional building, including structural framing, blockwork, and roofing framework. The project involves full site supervision, material coordination, and adherence to structural and safety standards.",
+  "highlights": [
+    "Three-storey reinforced concrete structure",
+    "Extensive external scaffolding for elevated works",
+    "On-site material batching and block production",
+    "Executed under strict safety and quality control measures"
+  ]
+},
+    {
+  "id": 2,
+  "title": "Site Clearing & Earthworks Development",
+  "category": "Civil Engineering",
+  "location": "Niger Delta, Nigeria",
+  "year": "2024",
+  "image": "/images/drainage-two.jpg",
+  "tags": [
+    "Earthworks",
+    "Excavation",
+    "Site Preparation",
+    "Heavy Equipment",
+    "Land Development"
+  ],
+  "summary": "Large-scale site clearing and earthworks operation executed in a swampy terrain environment, involving excavation, grading, and ground preparation for infrastructure development. The project utilized heavy-duty excavators to ensure proper leveling, drainage control, and soil stabilization.",
+  "highlights": [
+    "Operated multiple excavators simultaneously",
+    "Executed in waterlogged and challenging terrain",
+    "Ground leveling and preliminary drainage formation",
+    "Strict adherence to environmental and safety standards"
+  ]
+},
+  {
+  "id": 3,
+  "title": "On-Site Engineering Coordination & Safety Briefing",
+  "category": "Oil & Gas",
+  "location": "Port Harcourt, Nigeria",
+  "year": "2025",
+  "image": "/images/team-two.jpg",
+  "tags": [
+    "Project Management",
+    "HSEQ",
+    "Team Coordination",
+    "Site Inspection",
+    "Operational Planning"
+  ],
+  "summary": "On-site engineering coordination meeting involving project supervisors and technical personnel reviewing operational drawings and execution plans. The session focused on task alignment, safety compliance, and workflow optimization to ensure efficient project delivery within industry standards.",
+  "highlights": [
+    "Pre-task safety and operational briefing conducted",
+    "Cross-functional team collaboration on execution strategy",
+    "Strict compliance with PPE and HSEQ protocols",
+    "Improved workflow coordination before field deployment"
+  ]
+},
+{
+    "id": 4,
+    "title": "Marine Construction & Dredging Operations",
+    "category": "Marine & Civil Engineering",
+    "location": "Riverside Project Site",
+    "year": "2023",
+    "image": "/images/drainage-one.jpg",
+    "tags": [
+        "Dredging",
+        "Marine Construction",
+        "Crane Operations",
+        "Jetty Works",
+        "HSEQ"
+    ],
+    "summary": "Executed a marine-based construction and dredging operation utilizing a barge-mounted crane for structural and waterfront development works. The project involved coordinated lifting, material handling, and shoreline integration under controlled safety procedures.",
+    "highlights": [
+        "Barge-mounted heavy-duty crane deployment",
+        "Shoreline and waterfront structural works",
+        "Coordinated marine logistics with support boats",
+        "On-site crew safety compliance and supervision",
+        "Efficient equipment staging on floating platform"
+    ]
+},
+{
+    "id": 5,
+    "title": "Offshore Crew & Drilling Operations Team",
+    "category": "Oil & Gas",
+    "location": "Offshore Platform",
+    "year": "2026",
+    "image": "/images/team-one.jpg",
+    "tags": [
+        "Offshore Operations",
+        "Drilling Support",
+        "HSEQ",
+        "Crew Management",
+        "Marine Safety"
+    ],
+    "summary": "Offshore operations team assembled on a drilling platform during active marine operations. The crew demonstrated strict adherence to safety standards, wearing full PPE including coveralls, hard hats, safety boots, and life vests while supporting lifting and drilling activities.",
+    "highlights": [
+        "Multi-disciplinary offshore operations crew",
+        "Full PPE and life vest compliance",
+        "Drilling and heavy-lift equipment in background",
+        "Strong HSE culture and team coordination",
+        "Operational readiness on offshore helideck"
+    ]
+}
+]
