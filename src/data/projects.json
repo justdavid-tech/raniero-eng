@@ -110,5 +110,51 @@
         "Strong HSE culture and team coordination",
         "Operational readiness on offshore helideck"
     ]
+},
+{
+    "id": 6,
+    "title": "Large-Scale Reinforced Concrete Structural Development",
+    "category": "Commercial Construction",
+    "location": "Abuja, Nigeria",
+    "year": "2026",
+    "image": "/images/commercial-construction-foundation.jpg",
+    "tags": [
+        "Reinforced Concrete",
+        "Structural Framework",
+        "Rebar Installation",
+        "Site Development",
+        "Construction Engineering"
+    ],
+    "summary": "Aerial view of a large-scale reinforced concrete construction project showing extensive slab reinforcement and structural column work. The site demonstrates early-stage structural development with organized rebar placement, formwork preparation, and supporting infrastructure across the project area.",
+    "highlights": [
+        "Extensive reinforced concrete slab framework",
+        "Grid-based rebar installation for structural strength",
+        "Multiple structural columns supporting upper floors",
+        "Active commercial construction site with vehicles and materials",
+        "Large-scale development with coordinated engineering layout"
+    ]
+},
+{
+    "id": 7,
+    "title": "Multi-Storey Commercial Building Structural Development",
+    "category": "Commercial Construction",
+    "location": "Abuja, Nigeria",
+    "year": "2022",
+    "image": "/images/front.jpg",
+    "tags": [
+        "Structural Engineering",
+        "Concrete Framework",
+        "Blockwork Construction",
+        "Scaffolding",
+        "Site Development"
+    ],
+    "summary": "Front view of a multi-storey commercial building during the structural development phase. The project features reinforced concrete framing, block wall construction, and extensive scaffolding used to support ongoing upper-level works and roofing preparation.",
+    "highlights": [
+        "Three-level reinforced concrete structural framework",
+        "Blockwork walls integrated with structural columns and beams",
+        "Extensive scaffolding supporting upper floor construction",
+        "Large commercial building footprint under active development",
+        "Heavy equipment and open site prepared for further expansion"
+    ]
 }
 ]

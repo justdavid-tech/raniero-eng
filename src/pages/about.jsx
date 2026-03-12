@@ -663,7 +663,7 @@ export default function About() {
               {/* CEO Image */}
               <div className="ap-ceo-img-wrap w-full lg:w-96 flex-shrink-0" style={{ height: 520, position: 'relative' }}>
                 <img
-                  src="/images/ceo.jpeg"
+                  src="/images/ceo.png"
                   alt="CEO — Raniero Engineering"
                   className="ap-ceo-img"
                   style={{ width: '100%', height: '100%' }}

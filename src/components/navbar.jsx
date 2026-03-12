@@ -50,9 +50,7 @@ export default function Navbar() {
         .nav-root {
           font-family: 'Barlow', sans-serif;
         }
-        .logo-font {
-          font-family: 'Barlow Condensed', sans-serif;
-        }
+
 
         /* Animated underline for nav links */
         .nav-link-underline {
@@ -86,16 +84,7 @@ export default function Navbar() {
           transition: max-height 0.35s ease, opacity 0.3s ease;
         }
 
-        /* Accent stripe on logo */
-        .logo-stripe {
-          display: inline-block;
-          width: 4px;
-          height: 32px;
-          background: linear-gradient(180deg, #F59E0B, #D97706);
-          border-radius: 2px;
-          margin-right: 10px;
-          flex-shrink: 0;
-        }
+
 
         /* CTA button shimmer */
         .cta-btn {
@@ -145,15 +134,11 @@ export default function Navbar() {
 
             {/* ── LOGO ── */}
             <Link to="/" className="flex items-center group flex-shrink-0">
-              <span className="logo-stripe group-hover:scale-y-110 transition-transform duration-200" />
-              <div className="logo-font flex flex-col leading-tight">
-                <span className="text-white text-[18px] font-700 tracking-wider uppercase">
-                  Raniero
-                </span>
-                <span className="text-amber-400 text-[10px] font-600 tracking-[0.2em] uppercase">
-                  Engineering Nig. Ltd
-                </span>
-              </div>
+              <img 
+                src="/images/og-image-removebg-preview.png" 
+                alt="Raniero Engineering" 
+                className="h-22 md:h-22 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              />
             </Link>
 
             {/* ── DESKTOP NAV ── */}
