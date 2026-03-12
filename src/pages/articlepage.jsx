@@ -2,16 +2,125 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // Individual article page at /insights/:slug
 // Renders Sanity Portable Text with @portabletext/react
-// Install: npm install @portabletext/react
 // ─────────────────────────────────────────────────────────────────────────────
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
-
 
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { PortableText } from '@portabletext/react';
 import { getPostBySlug, urlFor } from '../lib/sanity';
+
+const SITE_URL = 'https://raniero-eng.vercel.app';
+const SITE_NAME = 'Raniero Engineering Nig. Limited';
+const FALLBACK_IMAGE = `${SITE_URL}/images/og-image.png`;
+
+// ── Dynamic SEO / JSON-LD injector ───────────────────────────────────────────
+function useSeoHead(post) {
+  useEffect(() => {
+    if (!post) return;
+
+    const slug     = post.slug?.current ?? '';
+    const pageUrl  = `${SITE_URL}/insights/${slug}`;
+    const title    = `${post.title} | ${SITE_NAME}`;
+    const desc     = post.excerpt || `Read ${post.title} on the Raniero Engineering blog.`;
+    const imgUrl   = post.coverImage?.asset
+      ? urlFor(post.coverImage).width(1200).height(630).fit('crop').auto('format').url()
+      : FALLBACK_IMAGE;
+    const author   = post.author?.name ?? 'Raniero Engineering';
+    const pubDate  = post.publishedAt ? new Date(post.publishedAt).toISOString() : new Date().toISOString();
+    const modDate  = post._updatedAt  ? new Date(post._updatedAt).toISOString()  : pubDate;
+
+    // ── <title> ──
+    const prevTitle      = document.title;
+    document.title       = title;
+
+    // ── Helper: inject a <meta> tag and track it for cleanup ──
+    const injected = [];
+    const setMeta  = (attr, attrVal, content) => {
+      let el = document.querySelector(`meta[${attr}="${attrVal}"]`);
+      const isNew = !el;
+      if (isNew) {
+        el = document.createElement('meta');
+        el.setAttribute(attr, attrVal);
+        document.head.appendChild(el);
+        injected.push(el);
+      }
+      el.setAttribute('content', content);
+      el.__prevContent = el.getAttribute('content');
+    };
+
+    // ── Basic SEO ──
+    setMeta('name', 'description',   desc);
+    setMeta('name', 'author',        author);
+
+    // ── Canonical ──
+    let canonical = document.querySelector('link[rel="canonical"]');
+    const prevCanonical = canonical?.href;
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      document.head.appendChild(canonical);
+      injected.push(canonical);
+    }
+    canonical.href = pageUrl;
+
+    // ── Open Graph ──
+    setMeta('property', 'og:type',        'article');
+    setMeta('property', 'og:url',         pageUrl);
+    setMeta('property', 'og:title',       post.title);
+    setMeta('property', 'og:description', desc);
+    setMeta('property', 'og:image',       imgUrl);
+    setMeta('property', 'article:published_time', pubDate);
+    setMeta('property', 'article:modified_time',  modDate);
+    setMeta('property', 'article:author',         author);
+    setMeta('property', 'article:section',        post.category ?? 'Engineering');
+
+    // ── Twitter / X ──
+    setMeta('name', 'twitter:card',        'summary_large_image');
+    setMeta('name', 'twitter:title',       post.title);
+    setMeta('name', 'twitter:description', desc);
+    setMeta('name', 'twitter:image',       imgUrl);
+    setMeta('name', 'twitter:image:alt',   post.title);
+
+    // ── JSON-LD Article structured data ──
+    const jsonLd = {
+      '@context': 'https://schema.org',
+      '@type':    'Article',
+      headline:   post.title,
+      description: desc,
+      image:      imgUrl,
+      datePublished: pubDate,
+      dateModified:  modDate,
+      url:        pageUrl,
+      author: {
+        '@type': 'Person',
+        name:    author,
+        worksFor: { '@type': 'Organization', name: SITE_NAME },
+      },
+      publisher: {
+        '@type': 'Organization',
+        name:    SITE_NAME,
+        logo:    { '@type': 'ImageObject', url: `${SITE_URL}/images/logo.png` },
+      },
+      mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
+      ...(post.readTime ? { timeRequired: `PT${post.readTime}M` } : {}),
+    };
+    const ldScript       = document.createElement('script');
+    ldScript.type        = 'application/ld+json';
+    ldScript.textContent = JSON.stringify(jsonLd);
+    ldScript.id          = '__article-ld-json__';
+    document.head.appendChild(ldScript);
+
+    // ── Cleanup on unmount / post change ──
+    return () => {
+      document.title = prevTitle;
+      if (prevCanonical) canonical.href = prevCanonical;
+      injected.forEach(el => el.parentNode?.removeChild(el));
+      ldScript.parentNode?.removeChild(ldScript);
+    };
+  }, [post]);
+}
 
 const CATEGORY_LABELS = {
   'project-management':   'Project Management',
@@ -78,6 +187,21 @@ export default function ArticlePage() {
   const [post,    setPost]    = useState(null);
   const [loading, setLoading] = useState(true);
   const [error,   setError]   = useState(null);
+  const [copied,  setCopied]  = useState(false);
+
+  // ── Share logic ──
+  const handleShare = () => {
+    const currentUrl = window.location.href;
+    navigator.clipboard.writeText(currentUrl)
+      .then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      })
+      .catch(err => console.error('Failed to copy: ', err));
+  };
+
+  // ── Inject SEO / JSON-LD whenever post data arrives ──
+  useSeoHead(post);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -200,6 +324,33 @@ export default function ArticlePage() {
           animation: art-shimmer 1.4s infinite;
           border-radius: 4px;
         }
+
+        /* ── Share Actions ── */
+        .art-share-btn {
+          display: inline-flex; align-items: center; gap: 8px;
+          color: rgba(255,255,255,0.6); font-size: 12px;
+          background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+          padding: 6px 12px; border-radius: 100px; cursor: pointer;
+          transition: all 0.2s;
+        }
+        .art-share-btn:hover { background: rgba(255,255,255,0.1); color: #F59E0B; border-color: rgba(245,158,11,0.3); }
+        .art-share-btn.copied { color: #10B981; border-color: #10B981; background: rgba(16,185,129,0.05); }
+
+        .art-share-bottom {
+          margin-top: 40px; padding: 24px;
+          border: 1px dashed #E5E7EB; border-radius: 4px;
+          display: flex; flex-direction: column; align-items: center; gap: 16px;
+          text-align: center;
+        }
+        .art-share-bottom-btn {
+          display: inline-flex; align-items: center; gap: 10px;
+          background: #0A1F44; color: white; border: none;
+          padding: 12px 24px; font-family: 'Barlow Condensed', sans-serif;
+          font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;
+          font-size: 14px; cursor: pointer; transition: background 0.2s;
+        }
+        .art-share-bottom-btn:hover { background: #111827; }
+        .art-share-bottom-btn.copied { background: #059669; }
       `}</style>
 
       <div className="art-root" style={{ paddingTop: 70 }}>
@@ -292,6 +443,22 @@ export default function ArticlePage() {
                     </svg>
                     {post.readTime} min read
                   </p>
+
+                  <div style={{ marginLeft: 'auto' }}>
+                    <button 
+                      className={`art-share-btn ${copied ? 'copied' : ''}`}
+                      onClick={handleShare}
+                    >
+                      <svg style={{ width: 14, height: 14 }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                        {copied ? (
+                          <path d="M20 6L9 17l-5-5" />
+                        ) : (
+                          <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8M16 6l-4-4-4 4M12 2v13" />
+                        )}
+                      </svg>
+                      {copied ? 'Link Copied!' : 'Share Article'}
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -334,6 +501,26 @@ export default function ArticlePage() {
                     </div>
                   </div>
                 )}
+
+                {/* Share Bottom CTA */}
+                <div className="art-share-bottom">
+                  <p className="art-display" style={{ fontSize: 14, fontWeight: 700, color: '#0A1F44', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    Enjoyed this article? Share it with your network
+                  </p>
+                  <button 
+                    className={`art-share-bottom-btn ${copied ? 'copied' : ''}`}
+                    onClick={handleShare}
+                  >
+                    <svg style={{ width: 18, height: 18 }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                      {copied ? (
+                        <path d="M20 6L9 17l-5-5" />
+                      ) : (
+                        <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8M16 6l-4-4-4 4M12 2v13" />
+                      )}
+                    </svg>
+                    {copied ? 'Link Copied to Clipboard' : 'Copy Article Link'}
+                  </button>
+                </div>
 
                 {/* Back CTA */}
                 <div style={{ marginTop: 48, display: 'flex', justifyContent: 'center' }}>
