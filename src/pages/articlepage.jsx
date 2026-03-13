@@ -101,7 +101,7 @@ function useSeoHead(post) {
       publisher: {
         '@type': 'Organization',
         name:    SITE_NAME,
-        logo:    { '@type': 'ImageObject', url: `${SITE_URL}/images/logo.png` },
+        logo:    { '@type': 'ImageObject', url: `${SITE_URL}/images/og-image.png` },
       },
       mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
       ...(post.readTime ? { timeRequired: `PT${post.readTime}M` } : {}),
