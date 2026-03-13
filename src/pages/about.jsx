@@ -671,7 +671,7 @@ export default function About() {
                 <div className="ap-ceo-overlay" />
                 <div className="ap-ceo-name-badge">
                   <p className="ap-display font-800 uppercase text-white" style={{ fontSize: '20px', letterSpacing: '0.01em' }}>
-                    CEO's Name
+                   Engr. Peter Otsai Ogbu 
                   </p>
                   <p style={{ color: '#F59E0B', fontSize: '13px', fontWeight: 600, marginTop: 2 }}>
                     Chief Executive Officer
