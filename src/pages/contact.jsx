@@ -654,7 +654,7 @@ export default function Contact() {
             </div>
 
             {/* ── MAP ── */}
-            <div className="cp-map-wrap mt-10">
+            {/* <div className="cp-map-wrap mt-10">
               <div style={{ padding: '16px 20px', background: '#fff', borderBottom: '1px solid #E5E7EB', display: 'flex', alignItems: 'center', gap: 10 }}>
                 <svg style={{ width: 16, height: 16, color: '#F59E0B' }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" />
@@ -671,7 +671,7 @@ export default function Contact() {
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Raniero Engineering Office Location"
               />
-            </div>
+            </div> */}
 
           </div>
         </div>
