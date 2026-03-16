@@ -6,6 +6,8 @@ import Projects from './pages/projects'
 import Contact from './pages/contact'
 import InsightsPage from './pages/insightspage'
 import ArticlePage from './pages/articlepage'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsOfService from './pages/TermsOfService'
 
 // Sub pages
 import ProjectManagement from './pages/services/projectManagement'
@@ -38,7 +40,7 @@ function App() {
       {/* Sub pages */}
       <Route path="/services/project-management" element={<ProjectManagement />} />
       <Route path="/services/corporate-training"   element={<CorporateTraining />} />
-      <Route path="/services/facility-management"  element={<FacilityManagement />} />
+      <Route path="/services/facility-logistics"  element={<FacilityManagement />} />
       <Route path="/services/design-execution"     element={<DesignExecution />} />
       <Route path="/services/logistics-services"   element={<LogisticsServices />} />
       <Route path="/services/process-establishment" element={<ProcessEstablishment />} />
@@ -47,6 +49,8 @@ function App() {
       <Route path="/services/civil-engineering"     element={<CivilEngineering />} />
       <Route path="/services/mechanical-engineering"     element={<MechanicalEngineering />} />
       <Route path="/services/electrical-engineering"     element={<ElectricalEngineering />} />
+      <Route path="/privacy" element={<PrivacyPolicy />} />
+      <Route path="/terms" element={<TermsOfService />} />
     </Routes>
     <ScrollToTopButton />
     </>

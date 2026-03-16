@@ -9,6 +9,63 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getAllPosts, urlFor } from '../lib/sanity';
 
+import { Helmet } from "react-helmet-async";
+
+<Helmet>
+  <title>Engineering Insights & Industry Articles | Raniero Engineering</title>
+
+  <meta
+    name="description"
+    content="Read engineering insights, industry updates, and expert articles from Raniero Engineering on infrastructure development, construction innovation, and industrial engineering in Nigeria."
+  />
+
+  <meta
+    name="keywords"
+    content="engineering insights Nigeria, construction industry insights, infrastructure development articles, engineering blog Nigeria, Raniero Engineering insights"
+  />
+
+  <meta name="author" content="Raniero Engineering" />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Engineering Insights & Industry Articles | Raniero Engineering"
+  />
+
+  <meta
+    property="og:description"
+    content="Stay informed with engineering insights, infrastructure updates, and expert perspectives from Raniero Engineering."
+  />
+
+  <meta property="og:type" content="website" />
+
+  <meta
+    property="og:url"
+    content="https://raniero.com.ng/insights"
+  />
+
+  <meta
+    property="og:image"
+    content="https://raniero.com.ng/images/og-image.png"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta
+    name="twitter:title"
+    content="Engineering Insights | Raniero Engineering"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Explore expert insights and articles on engineering, construction, and infrastructure development."
+  />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://raniero.com.ng/insights" />
+</Helmet>
+
 const CATEGORY_LABELS = {
   all:                    'All Articles',
   'project-management':   'Project Management',

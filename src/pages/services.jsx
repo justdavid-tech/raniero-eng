@@ -3,6 +3,63 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
+import { Helmet } from "react-helmet-async";
+
+<Helmet>
+  <title>Engineering Services | Raniero Engineering Nigeria</title>
+
+  <meta
+    name="description"
+    content="Explore Raniero Engineering services including infrastructure development, industrial engineering, construction solutions, project management, and technical consulting across Nigeria."
+  />
+
+  <meta
+    name="keywords"
+    content="engineering services Nigeria, construction engineering, infrastructure development, industrial engineering services, project management engineering, Raniero Engineering"
+  />
+
+  <meta name="author" content="Raniero Engineering" />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Engineering Services | Raniero Engineering"
+  />
+
+  <meta
+    property="og:description"
+    content="Raniero Engineering provides professional engineering services including construction, infrastructure development, and industrial engineering solutions."
+  />
+
+  <meta property="og:type" content="website" />
+
+  <meta
+    property="og:url"
+    content="https://raniero.com.ng/services"
+  />
+
+  <meta
+    property="og:image"
+    content="https://raniero.com.ng/images/og-image.png"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta
+    name="twitter:title"
+    content="Engineering Services | Raniero Engineering Nigeria"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Discover professional engineering and infrastructure services provided by Raniero Engineering across Nigeria."
+  />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://raniero.com.ng/services" />
+</Helmet>
+
 export default function Services() {
 const services = [
   {
@@ -117,7 +174,7 @@ const services = [
     id: 'mechanical-engineering',
     title: 'Mechanical Engineering',
     slug: '/mechanical-engineering',
-    description: 'Mechanical systems design, analysis, and optimization — delivering performance, safety, and long-term efficiency for complex industrial applications.',
+    description: 'Mechanical systems design, analysis, and optimization delivering performance, safety, and long-term efficiency for complex industrial applications.',
     image: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?w=800&q=80&auto=format&fit=crop',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">

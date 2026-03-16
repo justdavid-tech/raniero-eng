@@ -3,6 +3,63 @@ import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import projectsData from '../data/projects.json'
 
+import { Helmet } from "react-helmet-async";
+
+<Helmet>
+  <title>Engineering Projects | Raniero Engineering Nigeria</title>
+
+  <meta
+    name="description"
+    content="Explore Raniero Engineering's completed projects in infrastructure, construction, and industrial engineering across Nigeria. Discover our expertise in delivering reliable engineering solutions."
+  />
+
+  <meta
+    name="keywords"
+    content="engineering projects Nigeria, construction projects Nigeria, infrastructure projects, industrial engineering projects, Raniero Engineering portfolio"
+  />
+
+  <meta name="author" content="Raniero Engineering" />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Engineering Projects | Raniero Engineering"
+  />
+
+  <meta
+    property="og:description"
+    content="View Raniero Engineering's portfolio of engineering and infrastructure projects demonstrating quality, innovation, and technical excellence."
+  />
+
+  <meta property="og:type" content="website" />
+
+  <meta
+    property="og:url"
+    content="https://raniero.com.ng/projects"
+  />
+
+  <meta
+    property="og:image"
+    content="https://raniero.com.ng/images/og-image.png"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta
+    name="twitter:title"
+    content="Engineering Projects | Raniero Engineering Nigeria"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Discover infrastructure, construction, and engineering projects successfully completed by Raniero Engineering."
+  />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://raniero.com.ng/projects" />
+</Helmet>
+
 /* ─────────────────────────────────────────
    Collect unique categories for filter tabs
 ───────────────────────────────────────── */

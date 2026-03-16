@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://raniero.com.ng/sitemap.xml

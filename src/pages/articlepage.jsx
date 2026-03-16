@@ -11,7 +11,7 @@ import { useParams, Link } from 'react-router-dom';
 import { PortableText } from '@portabletext/react';
 import { getPostBySlug, urlFor } from '../lib/sanity';
 
-const SITE_URL = 'https://raniero-eng.vercel.app';
+const SITE_URL = 'https://raniero.com.ng/';
 const SITE_NAME = 'Raniero Engineering Nig. Limited';
 const FALLBACK_IMAGE = `${SITE_URL}/images/og-image.png`;
 

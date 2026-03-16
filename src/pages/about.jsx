@@ -3,6 +3,58 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
+import { Helmet } from "react-helmet-async";
+
+
+<Helmet>
+  <title>About Raniero Engineering | Engineering & Infrastructure Experts</title>
+
+  <meta
+    name="description"
+    content="Learn about Raniero Engineering, a professional engineering company delivering innovative construction, infrastructure, and industrial engineering solutions with a commitment to quality and safety."
+  />
+
+  <meta
+    name="keywords"
+    content="Raniero Engineering, engineering company Nigeria, infrastructure development, industrial engineering, construction engineering services"
+  />
+
+  <meta name="author" content="Raniero Engineering" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="About Raniero Engineering" />
+
+  <meta
+    property="og:description"
+    content="Discover Raniero Engineering's mission, expertise, and commitment to delivering reliable engineering and construction solutions."
+  />
+
+  <meta property="og:type" content="website" />
+
+  <meta property="og:url" content="https://raniero.com.ng/about" />
+
+  <meta
+    property="og:image"
+    content="https://raniero.com.ng/images/og-image.png"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta
+    name="twitter:title"
+    content="About Raniero Engineering | Engineering Solutions"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Learn about Raniero Engineering and how we deliver high-quality engineering and infrastructure solutions."
+  />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://raniero.com.ng/about" />
+</Helmet>
+
 // Core Values data ──────────────────────────────────────────────────────────
 const coreValues = [
   {

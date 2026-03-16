@@ -11,22 +11,77 @@
 //   6. Replace the three placeholders below with your real IDs
 // ─────────────────────────────────────────────────────────────────────────────
 
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import emailjs from '@emailjs/browser';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';
+import { Helmet } from "react-helmet-async";
+
+<Helmet>
+  <title>Contact Raniero Engineering | Engineering Company Nigeria</title>
+
+  <meta
+    name="description"
+    content="Get in touch with Raniero Engineering for engineering services, infrastructure development, and construction project inquiries in Nigeria. Contact our team today."
+  />
+
+  <meta
+    name="keywords"
+    content="contact Raniero Engineering, engineering company Nigeria contact, construction engineering inquiry, infrastructure engineering consultation Nigeria"
+  />
+
+  <meta name="author" content="Raniero Engineering" />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Contact Raniero Engineering | Engineering Services Nigeria"
+  />
+
+  <meta
+    property="og:description"
+    content="Contact Raniero Engineering for professional engineering services, infrastructure development, and project consultations."
+  />
+
+  <meta property="og:type" content="website" />
+
+  <meta
+    property="og:url"
+    content="https://raniero.com.ng/contact"
+  />
+
+  <meta
+    property="og:image"
+    content="https://raniero.com.ng/images/og-image.png"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta
+    name="twitter:title"
+    content="Contact Raniero Engineering"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Reach out to Raniero Engineering for engineering, construction, and infrastructure project inquiries."
+  />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://raniero.com.ng/contact" />
+</Helmet>
+
+// Formspree Endpoint - Replace 'YOUR_FORM_ID' with your actual Formspree ID
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xqeyyaov';
 
 // ── Contact details — replace with real info ──────────────────────────────────
 const CONTACT_INFO = {
   phone:    ['+234 815 259 8520', '+234 803 825 8927', '+234 909 156 4695'],
   whatsapp: '2348152598520',   // international format, no + or spaces
   email:    'ranieroengineering@gmail.com',
-  address:  'Plot 12, Engineering Close, GRA Phase 2, Abuja, Nigeria.',
+  address:  'Abuja, Nigeria.',
   mapSrc:   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126093.78244406018!2d7.367466896072045!3d9.024416365005285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e745f4cd62fd9%3A0x53bd17b4a20ea12b!2sAbuja%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1771845484392!5m2!1sen!2sng',
   socials: [
     {
@@ -112,7 +167,6 @@ function InfoCard({ icon, label, value, href, accent = '#F59E0B' }) {
 
 // ── Main component ─────────────────────────────────────────────────────────────
 export default function Contact() {
-  const formRef = useRef();
   const [fields, setFields] = useState({ name: '', email: '', phone: '', service: '', message: '' });
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState('idle'); // idle | sending | success | error
@@ -143,15 +197,29 @@ export default function Contact() {
 
     setStatus('sending');
     try {
-      await emailjs.sendForm(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_TEMPLATE_ID,
-        formRef.current,
-        EMAILJS_PUBLIC_KEY
-      );
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: fields.name,
+          email: fields.email,
+          phone: fields.phone,
+          service: fields.service,
+          message: fields.message,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
       setStatus('success');
       setFields({ name: '', email: '', phone: '', service: '', message: '' });
-    } catch {
+    } catch (error) {
+      console.error('Submission error:', error);
       setStatus('error');
     }
   }
@@ -453,7 +521,7 @@ export default function Contact() {
                     </div>
                   )}
 
-                  <form ref={formRef} onSubmit={handleSubmit} noValidate>
+                  <form onSubmit={handleSubmit} noValidate>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
 
                       {/* Name + Email */}
@@ -461,7 +529,7 @@ export default function Contact() {
                         <Field label="Full Name *" error={errors.name}>
                           <input
                             className={`cp-input ${errors.name ? 'error' : ''}`}
-                            type="text" name="from_name"
+                            type="text" name="name"
                             placeholder="e.g. Emeka Okonkwo"
                             value={fields.name}
                             onChange={handleChange}
@@ -470,7 +538,7 @@ export default function Contact() {
                         <Field label="Email Address *" error={errors.email}>
                           <input
                             className={`cp-input ${errors.email ? 'error' : ''}`}
-                            type="email" name="from_email"
+                            type="email" name="email"
                             placeholder="emeka@gmail.com"
                             value={fields.email}
                             onChange={handleChange}
